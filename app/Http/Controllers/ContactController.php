@@ -4,7 +4,9 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Contact;
+use Illuminate\Support\Facades\Mail;
 use Illuminate\Support\Facades\Session;
+use App\Mail\ContactForm;
 
 class ContactController extends Controller
 {
@@ -22,13 +24,16 @@ class ContactController extends Controller
             'phone' => 'required|min:9',
         ]);
 
-        $contact = Contact::create($request->all());
+        $contact = new Contact;
 
-        Mail::send('emails.contact', $contact,
-            function ($message) {
-                $message->from('no-reply@prideacjax.com');
-                $message->to(env('MAIL_USERNAME)'), 'Pride AC Jacksonville')->subject('Quote Request');
-            });
+        $contact->name = $request->name;
+        $contact->email = $request->email;
+        $contact->phone = $request->phone;
+        $contact->sq_footage = $request->sq_footage;
+        $contact->notes = $request->notes;
+        $contact->save();
+
+        Mail::to(env('MAIL_USERNAME'))->send(new ContactForm($contact));
 
         return back()->with('success', 'Thanks for contacting us!');
     }

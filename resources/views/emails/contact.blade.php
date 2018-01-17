@@ -1,26 +1,26 @@
 @component('mail::message')
 
     <p>
-        You received a message from {{ $name }}
+        You received a message from {{ $contact->name }}
     </p>
     <p>
-        Name: {{ $name }}
-    </p>
-
-    <p>
-        Email: {{ $email }}
+        Name: {{ $contact->name }}
     </p>
 
     <p>
-        Phone Number: {{ $phone }}
+        Email: {{ $contact->email }}
     </p>
 
     <p>
-        Square Footage of Home: {{ $sq_footage }}
+        Phone Number: {{ $contact->phone }}
     </p>
 
     <p>
-        Additional Notes: {{ $notes }}
+        Square Footage of Home: {{ $contact->sq_footage }}
+    </p>
+
+    <p>
+        Additional Notes: {{ $contact->notes }}
     </p>
 
 Thanks,<br>
