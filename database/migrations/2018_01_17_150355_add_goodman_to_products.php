@@ -15,11 +15,11 @@ class AddGoodmanToProducts extends Migration
     {
         Schema::create('goodman', function (Blueprint $table) {
             $table->increments('id');
-            $table->string('model');
+            $table->string('model')->nullable();
             $table->decimal('price');
             $table->decimal('seer_rating');
             $table->decimal('unit_size');
-            $table->text('description');
+            $table->text('description')->nullable();
             $table->timestamps();
         });
     }

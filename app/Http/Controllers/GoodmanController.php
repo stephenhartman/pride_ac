@@ -24,7 +24,7 @@ class GoodmanController extends Controller
      */
     public function create()
     {
-        //
+        return view('products.goodman.create');
     }
 
     /**
@@ -35,7 +35,20 @@ class GoodmanController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $this->validate($request, [
+            'price' => 'required',
+            'seer_rating' => 'required',
+            'unit_size' => 'required',
+        ]);
+
+        $goodman = new Goodman;
+
+        $goodman->model = $request->model;
+        $goodman->price = $request->price;
+        $goodman->seer_rating = $request->seer_rating;
+        $goodman->unit_size = $request->unit_size;
+        $goodman->description = $request->description;
+        $goodman->save();
     }
 
     /**
@@ -46,7 +59,7 @@ class GoodmanController extends Controller
      */
     public function show(Goodman $goodman)
     {
-        //
+        return view('products.goodman.show', compact('goodman'));
     }
 
     /**
@@ -57,7 +70,7 @@ class GoodmanController extends Controller
      */
     public function edit(Goodman $goodman)
     {
-        //
+        return view('products.goodman.edit', compact('goodman'));
     }
 
     /**
@@ -69,7 +82,16 @@ class GoodmanController extends Controller
      */
     public function update(Request $request, Goodman $goodman)
     {
-        //
+        $goodman->model = $request->model;
+        $goodman->price = $request->price;
+        $goodman->seer_rating = $request->seer_rating;
+        $goodman->unit_size = $request->unit_size;
+        $goodman->description = $request->description;
+        $goodman->save();
+
+        // set flash data with success message
+        Session::flash('success', 'The Goodman product was successfully saved.');
+        return redirect()->route('products.goodman.show', $goodman->id);
     }
 
     /**
@@ -80,6 +102,9 @@ class GoodmanController extends Controller
      */
     public function destroy(Goodman $goodman)
     {
-        //
+        $goodman->delete();
+
+        Session::flash('warning', 'The Goodman product was successfully deleted.');
+        return redirect()->route('products.goodman.index');
     }
 }
