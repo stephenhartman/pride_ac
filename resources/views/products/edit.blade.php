@@ -10,7 +10,7 @@
                 <div class="panel panel-default">
                     <div class="panel-heading">Create Goodman Product</div>
                     <div class="panel-body">
-                        {{ Form::model($product, ['route' => ['product.update', $product->id], 'method' => 'PUT']) }}
+                        {{ Form::model($product, ['route' => ['products.update', $product->id], 'method' => 'PUT']) }}
                         {{Form::label('model','Model')}}
                         {{Form::text('model', null, array('class' => 'form-control') )}}
                         <br>
