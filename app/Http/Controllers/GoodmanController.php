@@ -7,9 +7,9 @@ use App\Product;
 class GoodmanController extends Controller
 {
     /**
-     * Display a listing of the resource.
+     * Index for Goodman Products
      *
-     * @return \Illuminate\Http\Response
+     * @return mixed
      */
     public function index()
     {
@@ -18,6 +18,6 @@ class GoodmanController extends Controller
             ->orderBy('unit_size_id', 'asc')
             ->get();
 
-        return view('goodman.index', compact('products'));
+        return view('goodman.index')->withProducts($products);
     }
 }
