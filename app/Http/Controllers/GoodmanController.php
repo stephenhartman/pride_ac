@@ -3,8 +3,6 @@
 namespace App\Http\Controllers;
 
 use App\Product;
-use Illuminate\Http\Request;
-use Illuminate\Support\Facades\DB;
 
 class GoodmanController extends Controller
 {
@@ -15,22 +13,11 @@ class GoodmanController extends Controller
      */
     public function index()
     {
-        $goodman = DB::table('products')
-            ->where('brand_id', 1)
+        $products = Product::where('brand_id', 1)
+            ->orderBy('seer_rating_id', 'asc')
+            ->orderBy('unit_size_id', 'asc')
             ->get();
 
-        return view('goodman.index', compact('goodman'));
-    }
-
-
-    /**
-     * Display goodman product resource
-     *
-     * @param product $product
-     * @return \Illuminate\Contracts\View\Factory|\Illuminate\View\View
-     */
-    public function show(Product $product)
-    {
-        return view('products.show', compact('product'));
+        return view('goodman.index', compact('products'));
     }
 }
