@@ -20,7 +20,7 @@ Route::middleware(['admin'])->group(function () {
 Route::get('/', 'HomeController@index')->name('home');
 
 Route::get('products', 'ProductController@index')->name('products');
-Route::get('products/goodman', 'GoodmanController@index')->name('products.goodman');
+Route::resource('products/goodman', 'GoodmanController', ['only' => 'index']);
 
 Route::get('about', 'AboutController@index')->name('about');
 
