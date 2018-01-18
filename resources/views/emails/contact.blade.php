@@ -1,30 +1,30 @@
 @component('mail::message')
 
     <p>
-        You received a message from {{ $contact['name'] }}
+        You received a message from {{ $name }}
     </p>
     <p>
-        Name: {{ $contact['name'] }}
+        Name: {{ $name }}
     </p>
 
     <p>
-        Email: {{ $contact['email'] }}
+        Email: {{ $email }}
     </p>
 
     <p>
-        Phone Number: {{ $contact['phone'] }}
+        Phone Number: {{ $phone }}
     </p>
 
     <p>
-        Square Footage of Home: {{ $contact['sq_footage'] }}
+        Square Footage of Home: {{ $sq_footage }}
     </p>
 
     <p>
-        Additional Notes: {{ $contact['notes'] }}
+        Additional Notes: {{ $notes }}
     </p>
-<p>
-    Thanks,<br>
-    {{ config('app.name') }}
-</p>
 
+    <p>
+        Thanks,<br>
+        {{ config('app.name') }}
+    </p>
 @endcomponent

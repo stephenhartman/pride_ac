@@ -31,6 +31,12 @@ class ContactForm extends Mailable
         return $this
             ->to(env('MAIL_USERNAME'))
             ->subject('Pride AC Quote Request')
-            ->markdown('emails.contact')->with(['contact', $this->contact]);
+            ->markdown('emails.contact')->with([
+                'name' => $this->contact->name,
+                'email' => $this->contact->email,
+                'phone' => $this->contact->phone,
+                'sq_footage' => $this->contact->sq_footage,
+                'notes' => $this->contact->notes,
+            ]);
     }
 }
