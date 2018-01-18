@@ -29,7 +29,8 @@ class ContactForm extends Mailable
     public function build()
     {
         return $this
-            ->to(env('MAIL_USERNAME'))
+            ->to(env('MAIL_USERNAME'), 'Pride AC Jacksonville')
+            ->from('no-reply@prideacjax.com', 'Pride AC Jacksonville')
             ->subject('Pride AC Quote Request')
             ->markdown('emails.contact')->with([
                 'name' => $this->contact->name,

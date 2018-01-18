@@ -14,7 +14,7 @@ class GoodmanController extends Controller
      */
     public function index()
     {
-        //
+        return view('products.goodman');
     }
 
     /**
@@ -41,10 +41,10 @@ class GoodmanController extends Controller
     /**
      * Display the specified resource.
      *
-     * @param  \App\goodman  $goodman
+     * @param  \App\Goodman  $goodman
      * @return \Illuminate\Http\Response
      */
-    public function show(goodman $goodman)
+    public function show(Goodman $goodman)
     {
         //
     }
@@ -52,10 +52,10 @@ class GoodmanController extends Controller
     /**
      * Show the form for editing the specified resource.
      *
-     * @param  \App\goodman  $goodman
+     * @param  \App\Goodman  $goodman
      * @return \Illuminate\Http\Response
      */
-    public function edit(goodman $goodman)
+    public function edit(Goodman $goodman)
     {
         //
     }
@@ -64,10 +64,10 @@ class GoodmanController extends Controller
      * Update the specified resource in storage.
      *
      * @param  \Illuminate\Http\Request  $request
-     * @param  \App\goodman  $goodman
+     * @param  \App\Goodman  $goodman
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, goodman $goodman)
+    public function update(Request $request, Goodman $goodman)
     {
         //
     }
@@ -75,10 +75,10 @@ class GoodmanController extends Controller
     /**
      * Remove the specified resource from storage.
      *
-     * @param  \App\goodman  $goodman
+     * @param  \App\Goodman  $goodman
      * @return \Illuminate\Http\Response
      */
-    public function destroy(goodman $goodman)
+    public function destroy(Goodman $goodman)
     {
         //
     }
