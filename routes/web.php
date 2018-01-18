@@ -14,13 +14,13 @@
 Auth::routes();
 
 Route::middleware(['admin'])->group(function () {
-    Route::resource('products/goodman', 'GoodmanController', ['except' => 'index', 'show']);
+    Route::resource('products/goodman', 'GoodmanController', ['except' => 'index']);
 });
 
 Route::get('/', 'HomeController@index')->name('home');
 
 Route::get('products', 'ProductController@index')->name('products');
-Route::resource('products/goodman', 'GoodmanController', ['only' => 'index', 'show']);
+Route::get('products/goodman', 'GoodmanController@index')->name('products.goodman');
 
 Route::get('about', 'AboutController@index')->name('about');
 

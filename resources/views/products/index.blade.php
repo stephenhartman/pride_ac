@@ -9,7 +9,7 @@
                     <div class="panel-body">
                         <div class="row">
                             <div class="col-md-4">
-                                <a href="{{ url('products/goodman/index') }}">
+                                <a href="{{ route('products.goodman') }}">
                                     <img src="{{ url('/image/goodman.png') }}" class="product-image"></a>
                             </div>
                         </div>

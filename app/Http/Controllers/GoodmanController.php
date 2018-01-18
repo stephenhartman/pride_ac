@@ -14,7 +14,7 @@ class GoodmanController extends Controller
      */
     public function index()
     {
-        return view('products.goodman');
+        return view('products.goodman.index');
     }
 
     /**
