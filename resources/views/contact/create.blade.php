@@ -36,12 +36,12 @@
                             </div>
 
                             <div class="form-group">
-                                {!! Form::textarea('notes', null, ['class' => 'form-control']) !!}
+                                {{ Form::label('notes', 'Additional Notes') }}
+                                {{ Form::textarea('notes', null, ['class' => 'form-control']) }}
                             </div>
 
-                            {!! Form::submit('Submit', ['class' => 'btn btn-info']) !!}
-
-                            {!! Form::close() !!}
+                            {{ Form::submit('Submit', ['class' => 'btn btn-info']) }}
+                            {{ Form::close() }}
                     </div>
                 </div>
             </div>
