@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\goodman;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\DB;
 
 class GoodmanController extends Controller
 {
@@ -14,7 +15,11 @@ class GoodmanController extends Controller
      */
     public function index()
     {
-        return view('products.goodman.index');
+        $goodman = DB::table('goodman')
+            ->groupBy('seer_rating', 'unit_size')
+            ->get();
+
+        return view('products.goodman.index', compact('goodman'));
     }
 
     /**
