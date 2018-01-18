@@ -10,18 +10,45 @@
                             <div class="col-md-6">
                                 Goodman Heating and Air Conditioning
                             </div>
-                            <div class="col-md-6">
-                                <div class="pull-right">
-                                    <div class="col-md-2 col-sm-12">
-                                        @if (Auth::user())
-                                            <a href="{{ route('goodman.create') }}" class="btn btn-block btn-primary btn-lg" style="margin-top: 18px">Create Goodman Product</a>
-                                        @endif
-                                    </div>
+                        </div>
                     <div class="panel-body">
                         <div class="row">
-                            <div class="text-center">
-                                <h2>More coming soon!</h2>
-                            </div>
+                            <table class="table table-striped table-bordered">
+                                <thead>
+                                <tr>
+                                    <td>Unit Size</td>
+                                    <td>SEER Rating</td>
+                                    <td>Price</td>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                @foreach ($products as $product)
+                                <tr>
+                                    <td>{{ $product->unit_size }} Tons</td>
+                                    <td>{{ $product->seer_rating }} SEER</td>
+                                    <td>${{ $product->price }}</td>
+                                    <td>
+                                        @if (Auth::user())
+                                        <div class="row">
+                                            <div class="col-md-12">
+                                                {{ Form::open(['method' => 'GET', 'route' => ['products.edit', $product->id]]) }}
+                                                {{ Form::button('<i class="glyphicon glyphicon-pencil"></i> Edit', array('type' => 'submit', 'class' => 'btn btn-info')) }}
+                                                {{ Form::close() }}
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-md-12">
+                                                {{ Form::open(['method' => 'DELETE', 'route' => ['products.destroy', $product->id], ]) }}
+                                                {{ Form::button('<i class="glyphicon glyphicon-trash"></i> Delete', array('type' => 'submit', 'data-id' => $product->id, 'class' => 'btn btn-danger', 'onclick' => "return confirm('Are you sure?')")) }}
+                                                {{ Form::close() }}
+                                            </div>
+                                        </div>
+                                        @endif
+                                    </td>
+                                </tr>
+                                @endforeach
+                                </tbody>
+                            </table>
                         </div>
                     </div>
                 </div>
