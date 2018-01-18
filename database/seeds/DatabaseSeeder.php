@@ -11,6 +11,11 @@ class DatabaseSeeder extends Seeder
      */
     public function run()
     {
-        // $this->call(UsersTableSeeder::class);
+        // Create UnitSize and SeerRating
+        $this->call(UnitSizeSeeder::class);
+        $this->call(SeerRatingSeeder::class);
+        $this->call(BrandSeeder::class);
+        // Create Goodman Products
+        $this->call(GoodmanSeeder::class);
     }
 }
