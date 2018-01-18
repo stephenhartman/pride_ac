@@ -21,7 +21,7 @@ class ContactController extends Controller
         $this->validate($request, [
             'name' => 'required',
             'email' => 'required|email',
-            'phone' => 'required|min:9',
+            'phone' => 'required|size:9',
         ]);
 
         $contact = new Contact;
