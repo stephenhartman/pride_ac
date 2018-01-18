@@ -19,7 +19,7 @@ class Admin
         else
         {
             Session::flash('error', 'You need administrator privileges to view the requested page.');
-            return redirect('/home');
+            return back();
         }
     }
 }
