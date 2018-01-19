@@ -38,9 +38,9 @@
                             <div class="col-md-6">
                                 {{Form::label('seer_rating','Seer Rating')}}
                                 {{Form::select('seer_rating', [
-                                    '1' => '14 SEER',
-                                    '2' => '15 SEER',
-                                    '3' => '16 SEER'],
+                                    1 => '14 SEER',
+                                    2 => '15 SEER',
+                                    3 => '16 SEER'],
                                     $product->seer_rating_id, array('class' => 'form-control') )}}
                             </div>
                         </div>
@@ -48,23 +48,23 @@
                             <div class="col-md-6">
                                 {{Form::label('unit_size','Unit Size (Tonnage)')}}
                                 {{Form::select('unit_size', [
-                                    '1' => '1.5 Tons',
-                                    '2' => '2.0 Tons',
-                                    '3' => '2.5 Tons',
-                                    '4' => '3.0 Tons',
-                                    '5' => '3.5 Tons',
-                                    '6' => '4.0 Tons',
-                                    '7' => '4.5 Tons',
-                                    '8' => '5.0 Tons'],
+                                    1 => '1.5 Tons',
+                                    2 => '2.0 Tons',
+                                    3 => '2.5 Tons',
+                                    4 => '3.0 Tons',
+                                    5 => '3.5 Tons',
+                                    6 => '4.0 Tons',
+                                    7 => '4.5 Tons',
+                                    8 => '5.0 Tons'],
                                     $product->unit_size_id, array('class' => 'form-control') )}}
                             </div>
                             <div class="col-md-6">
                                 {{Form::label('brand','Brand')}}
                                 {{Form::select('brand', [
-                                    '1' => 'Goodman',
-                                    '2' => 'Trane',
-                                    '3' => 'Carrier',
-                                    '4' => 'Daikin'],
+                                    1 => 'Goodman',
+                                    2 => 'Trane',
+                                    3 => 'Carrier',
+                                    4 => 'Daikin'],
                                     $product->brand_id, array('class' => 'form-control') )}}
                             </div>
                         </div>

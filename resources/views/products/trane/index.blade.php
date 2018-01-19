@@ -28,7 +28,7 @@
                             <tbody>
                             <tr>
                                 <th scope="row">14 Seer</th>
-                                @foreach ($products->rating(1)->get() as $product)
+                                @foreach ($products_14 as $product)
                                     <td>
                                         @if (Auth::user())
                                             <a href="{{ URL::to('products/' . $product->id . '/edit') }}">${{ $product->price }}</a>
@@ -40,7 +40,7 @@
                             </tr>
                             <tr>
                                 <th scope="row">15 Seer</th>
-                                @foreach ($products->rating(2)->get() as $product)
+                                @foreach ($products_15 as $product)
                                     <td>
                                         @if (Auth::user())
                                             <a href="{{ URL::to('products/' . $product->id . '/edit') }}">${{ $product->price }}</a>
@@ -52,7 +52,7 @@
                             </tr>
                             <tr>
                                 <th scope="row">16 Seer</th>
-                                @foreach ($products->rating(3)->get() as $product)
+                                @foreach ($products_16 as $product)
                                     <td>
                                         @if (Auth::user())
                                             <a href="{{ URL::to('products/' . $product->id . '/edit') }}">${{ $product->price }}</a>
