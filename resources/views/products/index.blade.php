@@ -25,13 +25,13 @@
                                     <img src="{{ url('/image/goodman.png') }}" class="product-image"></a>
                             </div>
                             <div class="col-md-6">
-                                <a href="{{ route('trane') }}">
+                                <a href="#"><!-- route('trane' in the future -->
                                     <img src="{{ url('/image/trane.png') }}" class="product-image"></a>
                             </div>
                         </div>
                         <div class="row">
                             <div class="text-center">
-                                <h2>More coming soon!</h2>
+                                <h3>More coming soon!</h3>
                             </div>
                         </div>
                     </div>
