@@ -28,7 +28,7 @@
                                     '1' => '14 SEER',
                                     '2' => '15 SEER',
                                     '3' => '16 SEER'],
-                                    null, array('class' => 'form-control') )}}
+                                    '1', array('class' => 'form-control') )}}
                             </div>
                         </div>
                         <div class="row">
@@ -43,7 +43,7 @@
                                     '6' => '4.0 Tons',
                                     '7' => '4.5 Tons',
                                     '8' => '5.0 Tons'],
-                                    null, array('class' => 'form-control') )}}
+                                    '1', array('class' => 'form-control') )}}
                             </div>
                             <div class="col-md-6">
                                 {{Form::label('brand','Brand')}}
@@ -52,7 +52,7 @@
                                     '2' => 'Trane',
                                     '3' => 'Carrier',
                                     '4' => 'Daikin'],
-                                    null, array('class' => 'form-control') )}}
+                                    '1', array('class' => 'form-control') )}}
                             </div>
                         </div>
                         <div class="row">
