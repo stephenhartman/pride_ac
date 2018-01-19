@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Product;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Session;
 
 class ProductController extends Controller
 {
@@ -52,6 +53,11 @@ class ProductController extends Controller
         $product->description = $request->description;
         $product->brand_id = $request->brand;
         $product->save();
+
+
+        // set flash data with success message
+        Session::flash('success', 'The '. $product->brand->name . ' product was successfully saved.');
+        return redirect()->route('products.index');
     }
 
     /**
@@ -95,7 +101,7 @@ class ProductController extends Controller
 
         // set flash data with success message
         Session::flash('success', 'The product was successfully saved.');
-        return redirect()->route('products.show', $product->id);
+        return redirect()->route('products.index');
     }
 
     /**
@@ -108,7 +114,7 @@ class ProductController extends Controller
     {
         $product->delete();
 
-        Session::flash('warning', 'The product was successfully deleted.');
+        Session::flash('alert', 'The product was successfully deleted.');
         return redirect()->route('products.index');
     }
 
@@ -119,11 +125,8 @@ class ProductController extends Controller
      */
     public function goodman()
     {
-        $products = Product::where('brand_id', 1)
-            ->with(['seer_rating', 'unit_size'])
-            ->orderBy('seer_rating_id', 'asc')
-            ->orderBy('unit_size_id', 'asc')
-            ->get();
+        $products = Product::specificBrand(1)
+            ->orderBy('unit_size_id', 'asc');
 
         return view('products.goodman.index')->withProducts($products);
     }
@@ -135,11 +138,8 @@ class ProductController extends Controller
      */
     public function trane()
     {
-        $products = Product::where('brand_id', 2)
-            ->with(['seer_rating', 'unit_size'])
-            ->orderBy('seer_rating_id', 'asc')
-            ->orderBy('unit_size_id', 'asc')
-            ->get();
+        $products = Product::specificBrand(2)
+            ->orderBy('unit_size_id', 'asc');
 
         return view('products.trane.index')->withProducts($products);
     }
