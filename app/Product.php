@@ -6,6 +6,10 @@ use Illuminate\Database\Eloquent\Model;
 
 class Product extends Model
 {
+    protected $fillable = [
+        'model', 'price', 'description', 'seer_rating_id', 'unit_size_id', 'brand_id'
+    ];
+
     public function unitSize()
     {
         return $this->belongsTo(UnitSize::class);
