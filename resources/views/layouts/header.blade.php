@@ -21,7 +21,8 @@
             <ul class="nav navbar-nav">
                 <li><a href="{{ route('products.index') }}">Prices</a></li>
                 <li><a href="{{ route('about') }}">About Us</a></li>
-                <li><a href="{{ route('contact.create') }}">Quote</a></li>
+                <li><a href="{{ route('contact.create') }}">Get A Quote</a></li>
+                <li><a href="#">Services</a></li>
             </ul>
             <!-- Right Side Of Navbar -->
             <ul class="nav navbar-nav navbar-right">

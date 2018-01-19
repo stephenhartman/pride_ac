@@ -30,7 +30,6 @@ class GoodmanSeeder extends Seeder
         $unit_size_30 = UnitSize::where('size', 3.0)->first();
         $unit_size_35 = UnitSize::where('size', 3.5)->first();
         $unit_size_40 = UnitSize::where('size', 4.0)->first();
-        $unit_size_45 = UnitSize::where('size', 4.5)->first();
         $unit_size_50 = UnitSize::where('size', 5.0)->first();
 
         $goodman_14_15 = new Product();

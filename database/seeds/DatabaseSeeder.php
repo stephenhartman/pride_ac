@@ -15,7 +15,7 @@ class DatabaseSeeder extends Seeder
         $this->call(UnitSizeSeeder::class);
         $this->call(SeerRatingSeeder::class);
         $this->call(BrandSeeder::class);
-        // Create Goodman Products
-        //$this->call(GoodmanSeeder::class);
+        // Create Products
+        $this->call(ProductSeeder::class);
     }
 }

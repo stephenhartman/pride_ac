@@ -41,8 +41,7 @@
                                     4 => '3.0 Tons',
                                     5 => '3.5 Tons',
                                     6 => '4.0 Tons',
-                                    7 => '4.5 Tons',
-                                    8 => '5.0 Tons'],
+                                    7 => '5.0 Tons'],
                                     1, array('class' => 'form-control') )}}
                             </div>
                             <div class="col-md-6">
