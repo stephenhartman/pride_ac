@@ -4,54 +4,66 @@
     <div class="container">
         <div class="row">
             <div class="col-md-8 col-md-offset-2">
-                <div class="panel panel-default">
-                    <div class="panel-heading">
+                <div class="row">
+                    <div class="col-md-12 text-center">
                         <img src="{{ url('/image/trane.png') }}" class="image-heading"></a>
                     </div>
-                    <div class="panel-body">
-                        <div class="row">
-                            <div class="col-md-12">
-                                <table class="table table-striped table-bordered">
-                                    <thead>
-                                    <tr>
-                                        <td>Unit Size</td>
-                                        <td>SEER Rating</td>
-                                        <td>Price</td>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <table class="table table-striped table-bordered">
+                            <thead>
+                            <tr>
+                                <th></th>
+                                <th>1.5 Ton</th>
+                                <th>2 Ton</th>
+                                <th>2.5 Ton</th>
+                                <th>3.0 Ton</th>
+                                <th>3.5 Ton</th>
+                                <th>4.0 Ton</th>
+                                <th>4.5 Ton</th>
+                                <th>5.0 Ton</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr>
+                                <th scope="row">14 Seer</th>
+                                @foreach ($products->rating(1)->get() as $product)
+                                    <td>
                                         @if (Auth::user())
-                                            <td></td>
+                                            <a href="{{ URL::to('products/' . $product->id . '/edit') }}">${{ $product->price }}</a>
+                                        @else
+                                            ${{ $product->price }}
                                         @endif
-                                    </tr>
-                                    </thead>
-                                    <tbody>
-                                    @foreach ($products as $product)
-                                        <tr>
-                                            <td>{{ $product->unit_size->size }} Tons</td>
-                                            <td>{{ $product->seer_rating->rating }} SEER</td>
-                                            <td>${{ $product->price }}</td>
-                                            @if (Auth::user())
-                                                <td>
-                                                    <div class="row">
-                                                        <div class="col-md-12">
-                                                            {{ Form::open(['method' => 'GET', 'route' => ['products.edit', $product->id]]) }}
-                                                            {{ Form::button('<i class="glyphicon glyphicon-pencil"></i> Edit', array('type' => 'submit', 'class' => 'btn btn-info')) }}
-                                                            {{ Form::close() }}
-                                                        </div>
-                                                    </div>
-                                                    <div class="row">
-                                                        <div class="col-md-12">
-                                                            {{ Form::open(['method' => 'DELETE', 'route' => ['products.destroy', $product->id], ]) }}
-                                                            {{ Form::button('<i class="glyphicon glyphicon-trash"></i> Delete', array('type' => 'submit', 'data-id' => $product->id, 'class' => 'btn btn-danger', 'onclick' => "return confirm('Are you sure?')")) }}
-                                                            {{ Form::close() }}
-                                                        </div>
-                                                    </div>
-                                                </td>
-                                            @endif
-                                        </tr>
-                                    @endforeach
-                                    </tbody>
-                                </table>
-                            </div>
-                        </div>
+                                    </td>
+                                @endforeach
+                            </tr>
+                            <tr>
+                                <th scope="row">15 Seer</th>
+                                @foreach ($products->rating(2)->get() as $product)
+                                    <td>
+                                        @if (Auth::user())
+                                            <a href="{{ URL::to('products/' . $product->id . '/edit') }}">${{ $product->price }}</a>
+                                        @else
+                                            ${{ $product->price }}
+                                        @endif
+                                    </td>
+                                @endforeach
+                            </tr>
+                            <tr>
+                                <th scope="row">16 Seer</th>
+                                @foreach ($products->rating(3)->get() as $product)
+                                    <td>
+                                        @if (Auth::user())
+                                            <a href="{{ URL::to('products/' . $product->id . '/edit') }}">${{ $product->price }}</a>
+                                        @else
+                                            ${{ $product->price }}
+                                        @endif
+                                    </td>
+                                @endforeach
+                            </tr>
+                            </tbody>
+                        </table>
                     </div>
                 </div>
             </div>
