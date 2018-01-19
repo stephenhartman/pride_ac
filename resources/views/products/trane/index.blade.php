@@ -21,7 +21,6 @@
                                 <th>3.0 Ton</th>
                                 <th>3.5 Ton</th>
                                 <th>4.0 Ton</th>
-                                <th>4.5 Ton</th>
                                 <th>5.0 Ton</th>
                             </tr>
                             </thead>
