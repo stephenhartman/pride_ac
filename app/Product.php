@@ -6,8 +6,13 @@ use Illuminate\Database\Eloquent\Model;
 
 class Product extends Model
 {
+    /**
+     * The attributes that are mass assignable.
+     *
+     * @var array
+     */
     protected $fillable = [
-        'model', 'price', 'description', 'seer_rating_id', 'unit_size_id', 'brand_id'
+        'model', 'price', 'description', 'seer_rating_id', 'unit_size_id', 'brand_id',
     ];
 
     public function unitSize()
@@ -25,13 +30,13 @@ class Product extends Model
         return $this->belongsTo(Brand::class);
     }
 
-    public function scopeRating($query, $id)
+    public function scopeOfStaticType($query, $column, $id)
     {
-        return $query = self::where('seer_rating_id', $id);
+        return $query = self::where($column, $id);
     }
 
-    public function scopeSpecificBrand($query, $id)
+    public function scopeOfType($query, $column, $id)
     {
-        return $query = self::where('brand_id', $id);
+        return $query->where($column, $id);
     }
 }

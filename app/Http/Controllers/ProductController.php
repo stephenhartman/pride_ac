@@ -125,10 +125,20 @@ class ProductController extends Controller
      */
     public function goodman()
     {
-        $products = Product::specificBrand(1)
-            ->orderBy('unit_size_id', 'asc');
+        $products_14 = Product::ofType('seer_rating_id', '1')
+            ->ofType('brand_id', '1')
+            ->orderBy('unit_size_id', 'asc')
+            ->get();
+        $products_15 = Product::ofType('seer_rating_id', '2')
+            ->ofType('brand_id', '1')
+            ->orderBy('unit_size_id', 'asc')
+            ->get();
+        $products_16 = Product::ofType('seer_rating_id', '3')
+            ->ofType('brand_id', '1')
+            ->orderBy('unit_size_id', 'asc')
+            ->get();
 
-        return view('products.goodman.index')->withProducts($products);
+        return view('products.goodman.index', compact('products_14','products_15', 'products_16'));
     }
 
     /**
@@ -138,9 +148,19 @@ class ProductController extends Controller
      */
     public function trane()
     {
-        $products = Product::specificBrand(2)
-            ->orderBy('unit_size_id', 'asc');
+        $products_14 = Product::ofType('seer_rating_id', '1')
+            ->ofType('brand_id', '2')
+            ->orderBy('unit_size_id', 'asc')
+            ->get();
+        $products_15 = Product::ofType('seer_rating_id', '2')
+            ->ofType('brand_id', '2')
+            ->orderBy('unit_size_id', 'asc')
+            ->get();
+        $products_16 = Product::ofType('seer_rating_id', '3')
+            ->ofType('brand_id', '2')
+            ->orderBy('unit_size_id', 'asc')
+            ->get();
 
-        return view('products.trane.index')->withProducts($products);
+        return view('products.trane.index', compact('products_14','products_15', 'products_16'));
     }
 }
