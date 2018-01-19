@@ -8,16 +8,16 @@ class Product extends Model
 {
     public function unit_size()
     {
-        $this->hasOne(UnitSize::class);
+        return $this->belongsTo(UnitSize::class);
     }
 
     public function seer_rating()
     {
-        $this->hasOne(SeerRating::class);
+        return $this->belongsTo(SeerRating::class);
     }
 
     public function brand()
     {
-        $this->hasOne(Brand::class);
+        return $this->belongsTo(Brand::class);
     }
 }
