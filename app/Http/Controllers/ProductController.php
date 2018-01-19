@@ -2,7 +2,7 @@
 
 namespace App\Http\Controllers;
 
-use App\product;
+use App\Product;
 use Illuminate\Http\Request;
 
 class ProductController extends Controller
@@ -110,5 +110,37 @@ class ProductController extends Controller
 
         Session::flash('warning', 'The product was successfully deleted.');
         return redirect()->route('products.index');
+    }
+
+    /**
+     * Index for Goodman Products
+     *
+     * @return mixed
+     */
+    public function goodman()
+    {
+        $products = Product::where('brand_id', 1)
+            ->with(['seer_rating', 'unit_size'])
+            ->orderBy('seer_rating_id', 'asc')
+            ->orderBy('unit_size_id', 'asc')
+            ->get();
+
+        return view('products.goodman.index')->withProducts($products);
+    }
+
+    /**
+     * Index for Trane Products
+     *
+     * @return mixed
+     */
+    public function trane()
+    {
+        $products = Product::where('brand_id', 2)
+            ->with(['seer_rating', 'unit_size'])
+            ->orderBy('seer_rating_id', 'asc')
+            ->orderBy('unit_size_id', 'asc')
+            ->get();
+
+        return view('products.trane.index')->withProducts($products);
     }
 }

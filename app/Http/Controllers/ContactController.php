@@ -21,7 +21,7 @@ class ContactController extends Controller
         $this->validate($request, [
             'name' => 'required',
             'email' => 'required|email',
-            'phone' => 'required|size:9',
+            'phone' => 'required|size:10',
         ]);
 
         $contact = new Contact;
@@ -33,8 +33,8 @@ class ContactController extends Controller
         $contact->notes = $request->notes;
         $contact->save();
 
-        Mail::to(env('MAIL_USERNAME'))->send(new ContactForm($contact));
+        Mail::send(new ContactForm($contact));
 
-        return back()->with('success', 'Thanks for contacting us!');
+        return back()->with('success', 'Thanks for contacting us! We will contact you in 1-2 business days with more information.');
     }
 }
