@@ -21,7 +21,8 @@ Route::get('/', 'HomeController@index')->name('home');
 
 Route::resource('products', 'ProductController', ['only' => 'index']);
 
-Route::get('products/goodman', 'GoodmanController@index')->name('goodman.index');
+Route::get('goodman', 'ProductController@goodman')->name('goodman');
+Route::get('trane', 'ProductController@trane')->name('trane');
 
 Route::get('about', 'AboutController@index')->name('about');
 

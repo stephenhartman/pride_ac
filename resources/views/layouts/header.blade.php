@@ -26,6 +26,7 @@
             <!-- Right Side Of Navbar -->
             <ul class="nav navbar-nav navbar-right">
                 <li><a href="tel:+19045750794">Call Us: (904)575-0794</a></li>
+                <li><a href="tel:+19049453330">Para Español: (904)945-3330</a></li>
                 <!-- Authentication Links -->
                 @if (Auth::guest())
                 @else

@@ -26,7 +26,7 @@
                             </div>
 
                             <div class="form-group">
-                                {{ Form::label('phone', 'Phone Number (Format: 123456789)') }}
+                                {{ Form::label('phone', 'Ten Digit Phone Number') }}
                                 {{ Form::tel('phone', null, ['class' => 'form-control']) }}
                             </div>
 

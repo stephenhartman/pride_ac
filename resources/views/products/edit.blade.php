@@ -10,31 +10,31 @@
                 <div class="panel panel-default">
                     <div class="panel-heading">Create Goodman Product</div>
                     <div class="panel-body">
-                        {{ Form::model($product, ['route' => ['products.update', $product->id], 'method' => 'PUT']) }}
+                        {{ Form::model($product, ['route' => ['products.update', $product], 'method' => 'PUT']) }}
                         {{Form::label('model','Model')}}
-                        {{Form::text('model', null, array('class' => 'form-control') )}}
+                        {{Form::text('model', $product->model, array('class' => 'form-control') )}}
                         <br>
                         {{Form::label('price','Unit Price')}}
-                        {{Form::number('price', null, array('class' => 'form-control') )}}
+                        {{Form::number('price', $product->price, array('class' => 'form-control') )}}
                         <br>
                         {{Form::label('seer_rating','Seer Rating')}}
                         {{Form::select('seer_rating', [
-                            '14.0' => '14 SEER',
-                            '15.0' => '15 SEER',
-                            '16.0' => '16 SEER'],
-                            null, array('class' => 'form-control') )}}
+                            '1' => '14 SEER',
+                            '2' => '15 SEER',
+                            '3' => '16 SEER'],
+                            $product->seer_rating_id, array('class' => 'form-control') )}}
                         <br>
                         {{Form::label('unit_size','Unit Size (Tonnage)')}}
                         {{Form::select('unit_size', [
-                            '1.5' => '1.5 Tons',
-                            '2.0' => '2.0 Tons',
-                            '2.5' => '2.5 Tons',
-                            '3.0' => '3.0 Tons',
-                            '3.5' => '3.5 Tons',
-                            '4.0' => '4.0 Tons',
-                            '4.5' => '4.5 Tons',
-                            '5.0' => '5.0 Tons'],
-                            null, array('class' => 'form-control') )}}
+                            '1' => '1.5 Tons',
+                            '2' => '2.0 Tons',
+                            '3' => '2.5 Tons',
+                            '4' => '3.0 Tons',
+                            '5' => '3.5 Tons',
+                            '6' => '4.0 Tons',
+                            '7' => '4.5 Tons',
+                            '8' => '5.0 Tons'],
+                            $product->unit_size_id, array('class' => 'form-control') )}}
                         <br>
                         {{Form::label('brand','Brand')}}
                         {{Form::select('brand', [
@@ -42,7 +42,7 @@
                             '2' => 'Trane',
                             '3' => 'Carrier',
                             '4' => 'Daikin'],
-                            null, array('class' => 'form-control') )}}
+                            $product->brand_id, array('class' => 'form-control') )}}
                         <br>
                         {{Form::label('description','Description')}}
                         {{Form::textarea('description', null, array('class' => 'form-control') )}}
@@ -51,7 +51,7 @@
                                 {{Form::submit('Submit', array('class' => 'btn btn-info btn-lg btn-block', 'style' => 'margin-top: 20px'))}}
                             </div>
                             <div class="col-md-6">
-                                {!! Html::linkRoute('products.goodman', 'Cancel', array(), array('class' => "btn btn-danger btn-lg btn-block", 'style' => 'margin-top: 20px')) !!}
+                                {!! Html::linkRoute('products.index', 'Cancel', array(), array('class' => "btn btn-danger btn-lg btn-block", 'style' => 'margin-top: 20px')) !!}
                             </div>
                         </div>
 
