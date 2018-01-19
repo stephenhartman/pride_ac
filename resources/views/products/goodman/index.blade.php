@@ -10,45 +10,47 @@
                     </div>
                     <div class="panel-body">
                         <div class="row">
-                            <table class="table table-striped table-bordered">
-                                <thead>
-                                <tr>
-                                    <td>Unit Size</td>
-                                    <td>SEER Rating</td>
-                                    <td>Price</td>
-                                    @if (Auth::user())
-                                        <td></td>
-                                    @endif
-                                </tr>
-                                </thead>
-                                <tbody>
-                                @foreach ($products as $product)
+                            <div class="col-md-12">
+                                <table class="table table-striped table-bordered">
+                                    <thead>
                                     <tr>
-                                        <td>{{ $product->unit_size->size }} Tons</td>
-                                        <td>{{ $product->seer_rating->rating }} SEER</td>
-                                        <td>${{ $product->price }}</td>
+                                        <td>Unit Size</td>
+                                        <td>SEER Rating</td>
+                                        <td>Price</td>
                                         @if (Auth::user())
-                                            <td>
-                                                <div class="row">
-                                                    <div class="col-md-12">
-                                                        {{ Form::open(['method' => 'GET', 'route' => ['products.edit', $product->id]]) }}
-                                                        {{ Form::button('<i class="glyphicon glyphicon-pencil"></i> Edit', array('type' => 'submit', 'class' => 'btn btn-info btn-block')) }}
-                                                        {{ Form::close() }}
-                                                    </div>
-                                                </div>
-                                                <div class="row">
-                                                    <div class="col-md-12">
-                                                        {{ Form::open(['method' => 'DELETE', 'route' => ['products.destroy', $product->id], ]) }}
-                                                        {{ Form::button('<i class="glyphicon glyphicon-trash"></i> Delete', array('type' => 'submit', 'data-id' => $product->id, 'class' => 'btn btn-danger btn-block', 'onclick' => "return confirm('Are you sure?')")) }}
-                                                        {{ Form::close() }}
-                                                    </div>
-                                                </div>
-                                            </td>
+                                            <td></td>
                                         @endif
                                     </tr>
-                                @endforeach
-                                </tbody>
-                            </table>
+                                    </thead>
+                                    <tbody>
+                                    @foreach ($products as $product)
+                                        <tr>
+                                            <td>{{ $product->unit_size->size }} Tons</td>
+                                            <td>{{ $product->seer_rating->rating }} SEER</td>
+                                            <td>${{ $product->price }}</td>
+                                            @if (Auth::user())
+                                                <td>
+                                                    <div class="row">
+                                                        <div class="col-md-12">
+                                                            {{ Form::open(['method' => 'GET', 'route' => ['products.edit', $product->id]]) }}
+                                                            {{ Form::button('<i class="glyphicon glyphicon-pencil"></i> Edit', array('type' => 'submit', 'class' => 'btn btn-info btn-block')) }}
+                                                            {{ Form::close() }}
+                                                        </div>
+                                                    </div>
+                                                    <div class="row">
+                                                        <div class="col-md-12">
+                                                            {{ Form::open(['method' => 'DELETE', 'route' => ['products.destroy', $product->id], ]) }}
+                                                            {{ Form::button('<i class="glyphicon glyphicon-trash"></i> Delete', array('type' => 'submit', 'data-id' => $product->id, 'class' => 'btn btn-danger btn-block', 'onclick' => "return confirm('Are you sure?')")) }}
+                                                            {{ Form::close() }}
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                            @endif
+                                        </tr>
+                                    @endforeach
+                                    </tbody>
+                                </table>
+                            </div>
                         </div>
                     </div>
                 </div>
