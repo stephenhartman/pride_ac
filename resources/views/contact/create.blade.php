@@ -5,11 +5,11 @@
         <div class="row">
             <div class="col-md-8 col-md-offset-2">
                 <div class="panel panel-default">
-                    <div class="panel-heading">Contact Pride AC Jacksonville</div>
-
+                    <div class="panel-heading">
+                        <h4>Contact Pride AC Jacksonville</h4>
+                    </div>
                     <div class="panel-body">
                         {{ Form::open(['route' => 'contact.store']) }}
-
                         <div class="row">
                             <div class="col-md-6">
                                 <div class="form-group">
@@ -17,7 +17,6 @@
                                     {{ Form::text('name', null, ['class' => 'form-control']) }}
                                 </div>
                             </div>
-
                             <div class="col-md-6">
                                 <div class="form-group">
                                     {{ Form::label('email', 'E-mail Address') }}
