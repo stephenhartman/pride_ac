@@ -15,13 +15,15 @@
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
 </head>
 <body>
-<div itemscope itemtype="http://schema.org/LocalBusiness" id="app">
-    @include('layouts.header')
-    <div class="container-fluid">
-        @include('layouts.messages')
-        @yield('content')
+<div itemscope itemtype="http://schema.org/LocalBusiness">
+    <div id="app">
+        @include('layouts.header')
+        <div class="container-fluid">
+            @include('layouts.messages')
+            @yield('content')
+        </div>
+        @include('layouts.footer')
     </div>
-    @include('layouts.footer')
 </div>
 <!-- Scripts -->
 <script src="{{ asset('js/app.js') }}"></script>
