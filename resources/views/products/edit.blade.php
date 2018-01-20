@@ -1,6 +1,6 @@
 @extends('layouts.app')
 
-@section('title', 'Edit Goodman Product')
+@section('title', 'Edit '. $product->brand->name . ' Product')
 
 @section('content')
 

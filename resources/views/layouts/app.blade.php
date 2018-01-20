@@ -4,11 +4,13 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>@yield('title', config('app.name'))</title>
+    <meta name="description" content="Heating and Air Conditioning Service and Installation Company serving Northeast Florida and the Greater Jacksonville Area">
+    <meta name="keywords" content="Air Conditioning, Heating, HVAC, Jacksonville, Northeast Florida, Heating and Air, AC Service, AC Installation">
+    <meta name="robots" content="index,follow">
 
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
-
-    <title>@yield('title', config('app.name'))</title>
 
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
@@ -20,6 +22,7 @@
             @include('layouts.messages')
             @yield('content')
         </div>
+        @include('layouts.footer')
     </div>
 
     <!-- Scripts -->
