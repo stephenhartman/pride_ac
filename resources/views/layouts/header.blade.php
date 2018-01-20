@@ -24,8 +24,8 @@
                     <a class="dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                         Services<span class="caret"></span></a>
                     <ul class="dropdown-menu">
-                        <li><a href="#">Service</a></li>
-                        <li><a href="#">Installation</a></li>
+                        <li><a href="#">Service and Repairs</a></li>
+                        <li><a href="#">Installations</a></li>
                         <li><a href="#">Smart Thermostats</a></li>
                         <li><a href="#">Coil Cleanings</a></li>
                         <li><a href="#">Maintenance Contracts</a></li>
