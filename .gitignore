@@ -1,4 +1,4 @@
 Procfile
 /vendor
 .env
-.idea
+.idea/*
