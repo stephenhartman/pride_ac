@@ -20,9 +20,19 @@
             <!-- Left Side Of Navbar -->
             <ul class="nav navbar-nav">
                 <li><a href="{{ route('products.index') }}">Prices</a></li>
+                <li class="dropdown">
+                    <a class="dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Services<span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">Service</a></li>
+                        <li><a href="#">Installation</a></li>
+                        <li><a href="#">Smart Thermostats</a></li>
+                        <li><a href="#">Coil Cleanings</a></li>
+                        <li><a href="#">Maintenance Contracts</a></li>
+                    </ul>
+                </li>
                 <li><a href="{{ route('about') }}">About Us</a></li>
                 <li><a href="{{ route('contact.create') }}">Get A Quote</a></li>
-                <li><a href="#">Services</a></li>
             </ul>
             <!-- Right Side Of Navbar -->
             <ul class="nav navbar-nav navbar-right">
