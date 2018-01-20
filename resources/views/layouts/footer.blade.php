@@ -14,7 +14,7 @@
                 <h5><strong>Proudly serving the greater Jacksonville area.</strong></h5>
                 <!--Copyright-->
                 <div class="container-fluid">
-                    © 2018 Copyright <a href="{{ url('/') }}" style="text-decoration:none">Pride AC and Heating </a>
+                    © 2018 Copyright <a href="{{ url('/') }}" style="text-decoration:none"><span itemprop="name">Pride AC and Heating</span></a>
                 </div>
                 <!--/.Copyright-->
             </div>
@@ -23,15 +23,15 @@
             <div class="col-md-3">
                 <h5><strong>Location</strong></h5>
                 <ul>
-                    <a href="https://www.google.com/maps/place/5153+Bedford+Rd,+Jacksonville,+FL+32207/@30.2864362,-81.6162642,17z/data=!3m1!4b1!4m5!3m4!1s0x88e5b6720c98cf2d:0xc53dba1bb1034892!8m2!3d30.2864316!4d-81.6140755" style="text-decoration:none" target="_blank">
-                        <li class="nav">5153 Bedford Rd.</li>
-                        <li class="nav">Jacksonville, FL 32207</li>
+                    <a itemprop="address" itemscope itemtype="http://schema.org/PostalAddress" href="https://www.google.com/maps/place/5153+Bedford+Rd,+Jacksonville,+FL+32207/@30.2864362,-81.6162642,17z/data=!3m1!4b1!4m5!3m4!1s0x88e5b6720c98cf2d:0xc53dba1bb1034892!8m2!3d30.2864316!4d-81.6140755" style="text-decoration:none" target="_blank">
+                        <li class="nav"><span itemprop="streetAddress">5153 Bedford Rd.</span></li>
+                        <li class="nav"><span itemprop="addressLocality">Jacksonville</span>, <span itemprop="addressRegion">FL</span> <span itemprop="postalCode">32207</span></li>
                     </a>
                 </ul>
                 <h5><strong>Call us</strong></h5>
                 <ul>
-                    <li class="nav"><a href="tel:+19045750794" style="text-decoration:none">English: (904)575-0794</a></li>
-                    <li class="nav"><a href="tel:+19049453330" style="text-decoration:none">Español: (904)945-3330</a></li>
+                    <li class="nav"><a href="tel:+19045750794" style="text-decoration:none">English: <span itemprop="telephone">(904)575-0794</span></a></li>
+                    <li class="nav"><a href="tel:+19049453330" style="text-decoration:none">Español: <span itemprop="telephone">(904)945-3330</span></a></li>
                 </ul>
                 <h5><strong>License # CAC1819209</strong></h5>
             </div>
