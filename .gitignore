@@ -1,4 +1,7 @@
 Procfile
+/bootstrap/compiled.php
 /vendor
+composer.phar
+.DS_Store
+/.idea
 .env
-.idea/
