@@ -1,12 +1,11 @@
 @component('mail::message')
-        ## You received a message from {{ $name }}.
+        ## You received a message from {{ $name }} regarding a request for a quote.
+        <p>Name: {{ $name }}</p>
+        <p>Email: {{ $email }}</p>
+        <p>Phone Number: {{ $phone }}</p>
+        <p>Square Footage of Home: {{ $sq_footage }}</p>
+        <p>Additional Notes: {{ $notes }}</p>
 
-        -Name: {{ $name }}
-        -Email: {{ $email }}
-        -Phone Number: {{ $phone }}
-        -Square Footage of Home: {{ $sq_footage }}
-        -Additional Notes: {{ $notes }}
-
-        Thanks,
+        Thanks,<br>
         {{ config('app.name') }}
 @endcomponent

@@ -6,8 +6,11 @@
         <br>
         <div class="row">
             <!--First column-->
-            <div class="col-md-1"></div>
-            <div class="col-md-4 pull-center">
+            @if(Agent::isMobile())
+                <div class="col-md-4 col-md-offset-1">
+            @else
+                <div class="col-md-4 col-md-offset-1 pull-center">
+                @endif
                 <div class="row"></div>
                 <div class="row"></div>
                 <div class="row"></div>

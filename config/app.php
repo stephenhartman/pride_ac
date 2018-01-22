@@ -192,6 +192,11 @@ return [
          * Sentry
          */
         Sentry\SentryLaravel\SentryLaravelServiceProvider::class,
+
+        /*
+         * Agent Package
+         */
+        Jenssegers\Agent\AgentServiceProvider::class,
     ],
 
     /*
@@ -243,6 +248,7 @@ return [
         'Form' => Collective\Html\FormFacade::class,
         'Html' => Collective\Html\HtmlFacade::class,
         'Sentry' => Sentry\SentryLaravel\SentryFacade::class,
+        'Agent' => Jenssegers\Agent\Facades\Agent::class,
     ],
 
 ];
