@@ -13,6 +13,9 @@
 
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
+    <!-- Scripts -->
+    <script src="{{ asset('js/app.js') }}"></script>
+    @stack('scripts')
 </head>
 <body>
 <div itemscope itemtype="http://schema.org/LocalBusiness">
@@ -25,8 +28,5 @@
         @include('layouts.footer')
     </div>
 </div>
-<!-- Scripts -->
-<script src="{{ asset('js/app.js') }}"></script>
-@stack('scripts')
 </body>
 </html>
