@@ -77,3 +77,8 @@ html, body {
 .bg-image {
   background-image: url("/image/background.jpeg");
 }
+
+.g-recaptcha > div {
+  margin: 0 auto !important;
+  text-align: center;
+}

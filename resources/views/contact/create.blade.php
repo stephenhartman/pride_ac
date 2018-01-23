@@ -46,12 +46,20 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="row">
-                            <div class="col-md-6 text-center">
+                        <div class="row text-center">
+                            @if(Agent::isMobile())
+                                <div class="col-md-6" data-theme="light" style="transform:scale(0.89); transform-origin:0 0; margin:auto">
+                            @else
+                                <div class="col-md-6">
+                            @endif
                                 {!! NoCaptcha::display() !!}
                             </div>
-                            <div class="col-md-6">
-                                {{ Form::submit('Submit', ['class' => 'btn btn-info btn-block']) }}
+                            @if(Agent::isMobile())
+                                <div class="col-md-6">
+                            @else
+                                <div class="col-md-6" style="margin-top: 13.5px">
+                            @endif
+                                {{ Form::submit('Submit', ['class' => 'btn btn-lg btn-info btn-block']) }}
                                 {{ Form::close() }}
                             </div>
                         </div>
