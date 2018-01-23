@@ -11,6 +11,12 @@ use App\Mail\ContactForm;
 class ContactController extends Controller
 {
 
+    public function index()
+    {
+        $contacts = Contact::all();
+        return view('contact.index', compact('contacts'));
+    }
+
     public function create()
     {
         return view('contact.create');

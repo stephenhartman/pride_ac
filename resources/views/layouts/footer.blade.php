@@ -7,10 +7,10 @@
         <div class="row">
             <!--First column-->
             @if(Agent::isMobile())
-                <div class="col-md-4 col-md-offset-1">
+            <div class="col-md-4 col-md-offset-1">
             @else
-                <div class="col-md-4 col-md-offset-1 pull-center">
-                @endif
+            <div class="col-md-4 col-md-offset-1 pull-center">
+            @endif
                 <div class="row"></div>
                 <div class="row"></div>
                 <div class="row"></div>
@@ -18,7 +18,14 @@
                 <!--Copyright-->
                 <div class="container-fluid">
                     © 2018 Copyright <a href="{{ url('/') }}" style="text-decoration:none"><span itemprop="name">Pride AC and Heating</span></a>
+                    <br>
+                    <br>
                 </div>
+                <ul>
+                    <li class="nav">
+                        <a class="btn btn-default" href="{{ route('login') }}">Employee Login</a>
+                    </li>
+                </ul>
                 <!--/.Copyright-->
             </div>
             <!--/.First column-->
@@ -49,6 +56,7 @@
     <!--/.Footer Links-->
     <br>
     <br>
+    </div>
 </footer>
 <!--/.Footer-->
 @push('scripts')

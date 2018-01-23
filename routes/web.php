@@ -15,6 +15,7 @@ Auth::routes();
 
 Route::middleware(['admin'])->group(function () {
     Route::resource('products', 'ProductController', ['except' => 'index']);
+    Route::get('contact/index', 'ContactController@index')->name('contact.index');
 });
 
 Route::get('/', 'HomeController@index')->name('home');
