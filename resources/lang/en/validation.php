@@ -104,6 +104,11 @@ return [
             'required' => 'Please verify that you are not a robot.',
             'captcha' => 'Captcha error! Try again later or contact site admin.',
         ],
+
+        'phone' => [
+            'required' => 'Please enter a ten digit phone number.',
+            'size' => 'Please enter a ten digit phone number.',
+        ],
     ],
 
     /*
