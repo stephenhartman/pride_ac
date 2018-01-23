@@ -197,6 +197,11 @@ return [
          * Agent Package
          */
         Jenssegers\Agent\AgentServiceProvider::class,
+
+        /*
+         * NoCaptcha
+         */
+        Anhskohbo\NoCaptcha\NoCaptchaServiceProvider::class,
     ],
 
     /*
@@ -249,6 +254,7 @@ return [
         'Html' => Collective\Html\HtmlFacade::class,
         'Sentry' => Sentry\SentryLaravel\SentryFacade::class,
         'Agent' => Jenssegers\Agent\Facades\Agent::class,
+        'NoCaptcha' => Anhskohbo\NoCaptcha\Facades\NoCaptcha::class,
     ],
 
 ];

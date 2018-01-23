@@ -29,7 +29,7 @@
                                 </thead>
                                 <tbody>
                                 <tr>
-                                    <th scope="row">14 Seer</th>
+                                    <th scope="row">14 SEER</th>
                                     @foreach ($products_14 as $product)
                                         <td>
                                             @if (Auth::user())
@@ -41,7 +41,7 @@
                                     @endforeach
                                 </tr>
                                 <tr>
-                                    <th scope="row">15 Seer</th>
+                                    <th scope="row">15 SEER</th>
                                     @foreach ($products_15 as $product)
                                         <td>
                                             @if (Auth::user())
@@ -53,7 +53,7 @@
                                     @endforeach
                                 </tr>
                                 <tr>
-                                    <th scope="row">16 Seer</th>
+                                    <th scope="row">16 SEER</th>
                                     @foreach ($products_16 as $product)
                                         <td>
                                             @if (Auth::user())

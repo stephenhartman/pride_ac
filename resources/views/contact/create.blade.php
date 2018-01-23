@@ -20,7 +20,7 @@
                             <div class="col-md-6">
                                 <div class="form-group">
                                     {{ Form::label('email', 'E-mail Address') }}
-                                    {{ Form::text('email', 'example@gmail.com', ['class' => 'form-control']) }}
+                                    {{ Form::text('email', null, ['class' => 'form-control']) }}
                                 </div>
                             </div>
                         </div>
@@ -47,7 +47,10 @@
                             </div>
                         </div>
                         <div class="row">
-                            <div class="col-md-6 col-md-offset-3">
+                            <div class="col-md-6 text-center">
+                                {!! NoCaptcha::display() !!}
+                            </div>
+                            <div class="col-md-6">
                                 {{ Form::submit('Submit', ['class' => 'btn btn-info btn-block']) }}
                                 {{ Form::close() }}
                             </div>
@@ -58,3 +61,7 @@
         </div>
     </div>
 @endsection
+
+@push('scripts')
+    {!! NoCaptcha::renderJs() !!}
+@endpush
