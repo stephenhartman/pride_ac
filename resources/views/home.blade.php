@@ -15,6 +15,11 @@
                     <h4>Welcome to Pride AC Jacksonville</h4>
                 </div>
                 <div class="panel-body">
+                    <div class="row">
+                        <div class="text-center">
+                            <h2>More coming soon!</h2>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
