@@ -12,6 +12,9 @@
 
             <!-- Branding Image -->
             <a class="navbar-brand" href="{{ url('/') }}">
+                <span itemprop="image">
+                    <img class="navbar-left navbar-logo" style="" src="{{ url('/image/logo64px.png') }}" height="30px">
+                </span>
                 Pride AC Jacksonville
             </a>
         </div>

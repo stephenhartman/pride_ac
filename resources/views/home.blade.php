@@ -12,7 +12,11 @@
         <div class="col-md-8 col-md-offset-2">
             <div class="panel panel-default">
                 <div class="panel-heading">
-                    <h4>Welcome to Pride AC Jacksonville</h4>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <h4>Welcome to Pride AC Jacksonville</h4>
+                        </div>
+                    </div>
                 </div>
                 <div class="panel-body">
                     <div class="row">
