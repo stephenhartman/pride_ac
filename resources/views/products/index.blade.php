@@ -22,14 +22,14 @@
                     </div>
                     <div class="panel-body">
                         <div class="row">
-                            <div class="col-md-6">
+                            <div class="col-md-12 text-center">
                                 <a href="{{ route('goodman') }}">
                                     <img src="{{ url('/image/goodman.png') }}" class="product-image"></a>
                             </div>
-                            <div class="col-md-6">
-                                <a href="#"><!-- route('trane' in the future -->
+                            <!--<div class="col-md-6">
+                                <a href="#"> route('trane' in the future
                                     <img src="{{ url('/image/trane.png') }}" class="product-image"></a>
-                            </div>
+                            </div>-->
                         </div>
                         <div class="row">
                             <div class="text-center">
