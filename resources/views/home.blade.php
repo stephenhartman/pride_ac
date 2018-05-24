@@ -20,6 +20,25 @@
                 </div>
                 <div class="panel-body">
                     <div class="row">
+                        <div class="tabpanel">
+                            <!-- Nav tabs -->
+                            <ul class="nav nav-tabs" role="tablist">
+                                @foreach($serve as $count => $serves)
+                                    <li role="goodman" @if($count == 0) class="active" @endif>
+                                        <a href="#tab-{{ $serves->id }}" aria-controls="#tab-{{ $serves->id }}" role="tab" data-toggle="tab">{{ $serves->service }}</a
+                                    </li>
+                                @endforeach
+                            </ul>
+                            <!-- Tab panes -->
+                            <div class="tab-content">
+                                @foreach($serve as $count => $serves)
+                                    <div role="tabpanel" @if($count == 0) class="tab-pane active" @else class="tab-pane" @endif id="tab-{{ $serves->id }}">
+                                        <h2>{{ $serves->service }}</h2>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias enim obcaecati praesentium repellat. Est explicabo facilis fuga illum iusto, obcaecati saepe voluptates! Dolores eaque porro quaerat sunt totam ut, voluptas.</p>
+                                    </div>
+                                @endforeach
+                            </div>
+                        </div>
                         <div class="text-center">
                             <h2>More coming soon!</h2>
                         </div>

@@ -34,6 +34,7 @@ Route::resource('products', 'ProductController', ['only' => 'index']);
 
 Route::get('goodman', 'ProductController@goodman')->name('goodman');
 Route::get('trane', 'ProductController@trane')->name('trane');
+Route::get('american', 'ProductController@american')->name('american');
 
 Route::get('about', 'AboutController@index')->name('about');
 

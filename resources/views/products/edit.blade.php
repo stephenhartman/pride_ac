@@ -62,8 +62,9 @@
                                 {{Form::select('brand', [
                                     1 => 'Goodman',
                                     2 => 'Trane',
-                                    3 => 'Carrier',
-                                    4 => 'Daikin'],
+                                    3 => 'American Standard',
+                                    4 => 'Carrier',
+                                    5 => 'Daikin'],
                                     $product->brand_id, array('class' => 'form-control') )}}
                             </div>
                         </div>

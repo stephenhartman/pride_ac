@@ -49,8 +49,9 @@
                                 {{Form::select('brand', [
                                     1 => 'Goodman',
                                     2 => 'Trane',
-                                    3 => 'Carrier',
-                                    4 => 'Daikin'],
+                                    3 => 'American Standard',
+                                    4 => 'Carrier',
+                                    5 => 'Daikin'],
                                     1, array('class' => 'form-control') )}}
                             </div>
                         </div>
