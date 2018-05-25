@@ -2,8 +2,6 @@
 <footer class="footer">
     <!--Footer Links-->
     <div class="container">
-        <br>
-        <br>
         <div class="row">
             <!--First column-->
             @if(Agent::isMobile())
