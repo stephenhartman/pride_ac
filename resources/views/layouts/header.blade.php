@@ -22,7 +22,7 @@
         <div class="collapse navbar-collapse" id="app-navbar-collapse">
             <!-- Left Side Of Navbar -->
             <ul class="nav navbar-nav">
-                <li><a href="{{ route('products.index') }}">Prices</a></li>
+                <li class="{{ Request::is('products') || Request::is('goodman') || Request::is('american') ? 'active' : '' }}"><a href="{{ route('products.index') }}">Prices</a></li>
                 <li class="dropdown">
                     <a class="dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                         Services<span class="caret"></span></a>
@@ -34,8 +34,9 @@
                         <li><a href="#">Maintenance Contracts</a></li>
                     </ul>
                 </li>
-                <li><a href="{{ route('about') }}">About Us</a></li>
-                <li><a href="{{ route('contact.create') }}">Get A Quote</a></li>
+                <li class="{{ Request::is('about') ? 'active' : '' }}"><a href="{{ route('about') }}">About Us</a></li>
+                <li class="{{ Request::is('contact') ? 'active' : '' }}"><a href="{{ route('contact.create') }}">Get a Quote</a></li>
+                <li><a href="https://www.ftlfinance.com" target="_blank">Financing</a></li>
             </ul>
             <!-- Right Side Of Navbar -->
             <ul class="nav navbar-nav navbar-right">

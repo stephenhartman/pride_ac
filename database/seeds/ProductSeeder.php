@@ -16,6 +16,7 @@ class ProductSeeder extends Seeder
     public function run()
     {
         $goodman = Brand::where('name', "Goodman")->first();
+        $american = Brand::where('name', "American Standard")->first();
         // TODO Add more brands' products
         //$trane = Brand::where('name', "Trane")->first();
         //$carrier = Brand::where('name', "Carrier")->first();
@@ -33,6 +34,7 @@ class ProductSeeder extends Seeder
         $unit_size_40 = UnitSize::where('size', 4.0)->first();
         $unit_size_50 = UnitSize::where('size', 5.0)->first();
 
+        // Goodman
         $goodman_14_15 = new Product();
         $goodman_14_15->model = 'Goodman 1.5 Ton 14 SEER';
         $goodman_14_15->price = 3187.36;
@@ -200,5 +202,174 @@ class ProductSeeder extends Seeder
         $goodman_16_50->unit_size_id = $unit_size_50->id;
         $goodman_16_50->brand_id = $goodman->id;
         $goodman_16_50->save();
+
+        // American Standard
+        $american_14_15 = new Product();
+        $american_14_15->model = 'American Standard 1.5 Ton 14 SEER';
+        $american_14_15->price = 3787.36;
+        $american_14_15->seer_rating_id = $seer_rating_14->id;
+        $american_14_15->unit_size_id = $unit_size_15->id;
+        $american_14_15->brand_id = $american->id;
+        $american_14_15->save();
+
+        $american_15_15 = new Product();
+        $american_15_15->model = 'American Standard 1.5 Ton 15 SEER';
+        $american_15_15->price = 4092.56;
+        $american_15_15->seer_rating_id = $seer_rating_15->id;
+        $american_15_15->unit_size_id = $unit_size_15->id;
+        $american_15_15->brand_id = $american->id;
+        $american_15_15->save();
+
+        $american_16_15 = new Product();
+        $american_16_15->model = 'American Standard 1.5 Ton 16 SEER';
+        $american_16_15->price = 4236.48;
+        $american_16_15->seer_rating_id = $seer_rating_16->id;
+        $american_16_15->unit_size_id = $unit_size_15->id;
+        $american_16_15->brand_id = $american->id;
+        $american_16_15->save();
+
+        $american_14_20 = new Product();
+        $american_14_20->model = 'American Standard 2.0 Ton 14 SEER';
+        $american_14_20->price = 3892.45;
+        $american_14_20->seer_rating_id = $seer_rating_14->id;
+        $american_14_20->unit_size_id = $unit_size_20->id;
+        $american_14_20->brand_id = $american->id;
+        $american_14_20->save();
+
+        $american_15_20 = new Product();
+        $american_15_20->model = 'American Standard 2.0 Ton 15 SEER';
+        $american_15_20->price = 4178.34;
+        $american_15_20->seer_rating_id = $seer_rating_15->id;
+        $american_15_20->unit_size_id = $unit_size_20->id;
+        $american_15_20->brand_id = $american->id;
+        $american_15_20->save();
+
+        $american_16_20 = new Product();
+        $american_16_20->model = 'American Standard 2.0 Ton 16 SEER';
+        $american_16_20->price = 4473.33;
+        $american_16_20->seer_rating_id = $seer_rating_16->id;
+        $american_16_20->unit_size_id = $unit_size_20->id;
+        $american_16_20->brand_id = $american->id;
+        $american_16_20->save();
+
+        $american_14_25 = new Product();
+        $american_14_25->model = 'American Standard 2.5 Ton 14 SEER';
+        $american_14_25->price = 3998.93;
+        $american_14_25->seer_rating_id = $seer_rating_14->id;
+        $american_14_25->unit_size_id = $unit_size_25->id;
+        $american_14_25->brand_id = $american->id;
+        $american_14_25->save();
+
+        $american_15_25 = new Product();
+        $american_15_25->model = 'American Standard 2.5 Ton 15 SEER';
+        $american_15_25->price = 4284.14;
+        $american_15_25->seer_rating_id = $seer_rating_15->id;
+        $american_15_25->unit_size_id = $unit_size_25->id;
+        $american_15_25->brand_id = $american->id;
+        $american_15_25->save();
+
+        $american_16_25 = new Product();
+        $american_16_25->model = 'American Standard 2.5 Ton 16 SEER';
+        $american_16_25->price = 4576.52;
+        $american_16_25->seer_rating_id = $seer_rating_16->id;
+        $american_16_25->unit_size_id = $unit_size_25->id;
+        $american_16_25->brand_id = $american->id;
+        $american_16_25->save();
+
+        $american_14_30 = new Product();
+        $american_14_30->model = 'American Standard 3.0 Ton 14 SEER';
+        $american_14_30->price = 4162.23;
+        $american_14_30->seer_rating_id = $seer_rating_14->id;
+        $american_14_30->unit_size_id = $unit_size_30->id;
+        $american_14_30->brand_id = $american->id;
+        $american_14_30->save();
+
+        $american_15_30 = new Product();
+        $american_15_30->model = 'American Standard 3.0 Ton 15 SEER';
+        $american_15_30->price = 4487.91;
+        $american_15_30->seer_rating_id = $seer_rating_15->id;
+        $american_15_30->unit_size_id = $unit_size_30->id;
+        $american_15_30->brand_id = $american->id;
+        $american_15_30->save();
+
+        $american_16_30 = new Product();
+        $american_16_30->model = 'American Standard 3.0 Ton 16 SEER';
+        $american_16_30->price = 4721.37;
+        $american_16_30->seer_rating_id = $seer_rating_16->id;
+        $american_16_30->unit_size_id = $unit_size_30->id;
+        $american_16_30->brand_id = $american->id;
+        $american_16_30->save();
+
+        $american_14_35 = new Product();
+        $american_14_35->model = 'American Standard 3.5 Ton 14 SEER';
+        $american_14_35->price = 4382.52;
+        $american_14_35->seer_rating_id = $seer_rating_14->id;
+        $american_14_35->unit_size_id = $unit_size_35->id;
+        $american_14_35->brand_id = $american->id;
+        $american_14_35->save();
+
+        $american_15_35 = new Product();
+        $american_15_35->model = 'American Standard 3.5 Ton 15 SEER';
+        $american_15_35->price = 4710.24;
+        $american_15_35->seer_rating_id = $seer_rating_15->id;
+        $american_15_35->unit_size_id = $unit_size_35->id;
+        $american_15_35->brand_id = $american->id;
+        $american_15_35->save();
+
+        $american_16_35 = new Product();
+        $american_16_35->model = 'American Standard 3.5 Ton 16 SEER';
+        $american_16_35->price = 5008.88;
+        $american_16_35->seer_rating_id = $seer_rating_16->id;
+        $american_16_35->unit_size_id = $unit_size_35->id;
+        $american_16_35->brand_id = $american->id;
+        $american_16_35->save();
+
+        $american_14_40 = new Product();
+        $american_14_40->model = 'American Standard 4.0 Ton 14 SEER';
+        $american_14_40->price = 4772.85;
+        $american_14_40->seer_rating_id = $seer_rating_14->id;
+        $american_14_40->unit_size_id = $unit_size_40->id;
+        $american_14_40->brand_id = $american->id;
+        $american_14_40->save();
+
+        $american_15_40 = new Product();
+        $american_15_40->model = 'American Standard 4.0 Ton 15 SEER';
+        $american_15_40->price = 5028.24;
+        $american_15_40->seer_rating_id = $seer_rating_15->id;
+        $american_15_40->unit_size_id = $unit_size_40->id;
+        $american_15_40->brand_id = $american->id;
+        $american_15_40->save();
+
+        $american_16_40 = new Product();
+        $american_16_40->model = 'American Standard 4.0 Ton 16 SEER';
+        $american_16_40->price = 5391.21;
+        $american_16_40->seer_rating_id = $seer_rating_16->id;
+        $american_16_40->unit_size_id = $unit_size_40->id;
+        $american_16_40->brand_id = $american->id;
+        $american_16_40->save();
+
+        $american_14_50 = new Product();
+        $american_14_50->model = 'American Standard 5.0 Ton 14 SEER';
+        $american_14_50->price = 5035.67;
+        $american_14_50->seer_rating_id = $seer_rating_14->id;
+        $american_14_50->unit_size_id = $unit_size_50->id;
+        $american_14_50->brand_id = $american->id;
+        $american_14_50->save();
+
+        $american_15_50 = new Product();
+        $american_15_50->model = 'American Standard 5.0 Ton 15 SEER';
+        $american_15_50->price = 6034.49;
+        $american_15_50->seer_rating_id = $seer_rating_15->id;
+        $american_15_50->unit_size_id = $unit_size_50->id;
+        $american_15_50->brand_id = $american->id;
+        $american_15_50->save();
+
+        $american_16_50 = new Product();
+        $american_16_50->model = 'American Standard 5.0 Ton 16 SEER';
+        $american_16_50->price = 6512.32;
+        $american_16_50->seer_rating_id = $seer_rating_16->id;
+        $american_16_50->unit_size_id = $unit_size_50->id;
+        $american_16_50->brand_id = $american->id;
+        $american_16_50->save();
     }
 }

@@ -16,6 +16,7 @@ class GoodmanSeeder extends Seeder
     public function run()
     {
         $goodman = Brand::where('name', "Goodman")->first();
+        $american = Brand::where('name', "American Standard");
         $trane = Brand::where('name', "Trane")->first();
         $carrier = Brand::where('name', "Carrier")->first();
         $daikin = Brand::where('name', "Daikin")->first();

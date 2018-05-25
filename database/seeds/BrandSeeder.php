@@ -20,6 +20,10 @@ class BrandSeeder extends Seeder
         $trane->name = 'Trane';
         $trane->save();
 
+        $daikin = new Brand();
+        $daikin->name = 'American Standard';
+        $daikin->save();
+
         $carrier = new Brand();
         $carrier->name = 'Carrier';
         $carrier->save();

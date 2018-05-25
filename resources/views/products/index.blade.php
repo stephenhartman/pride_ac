@@ -22,14 +22,14 @@
                     </div>
                     <div class="panel-body">
                         <div class="row">
-                            <div class="col-md-12 text-center">
+                            <div class="col-md-6 text-center">
                                 <a href="{{ route('goodman') }}">
                                     <img src="{{ url('/image/goodman.png') }}" class="product-image"></a>
                             </div>
-                            <!--<div class="col-md-6">
-                                <a href="#"> route('trane' in the future
-                                    <img src="{{ url('/image/trane.png') }}" class="product-image"></a>
-                            </div>-->
+                            <div class="col-md-6 text-center">
+                                <a href="{{ route('american') }}">
+                                    <img src="{{ url('/image/american_standard.jpg') }}" class="product-image"></a>
+                            </div>
                         </div>
                         <div class="row">
                             <div class="text-center">

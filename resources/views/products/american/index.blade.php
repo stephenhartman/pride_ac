@@ -1,6 +1,6 @@
 @extends('layouts.app')
 
-@section('title', 'Goodman Prices')
+@section('title', 'American Standard Prices')
 
 @section('content')
     <div class="container">
@@ -8,7 +8,7 @@
             <div class="col-md-8 col-md-offset-2">
                 <div class="row">
                     <div class="col-md-12 text-center">
-                        <img src="{{ url('/image/goodman.png') }}" class="image-heading"></a>
+                        <img src="{{ url('/image/american_standard.jpg') }}" class="image-heading"></a>
                     </div>
                 </div>
                 <div class="row">
@@ -26,20 +26,21 @@
                                 <li>
                                     Pride AC and Heating will warranty all labor for a period of one year.
                                 </li>
-                                <li>Goodman brand limited warranties cover defects in materials and
-                                    workmanship that appear under normal use and maintenance for a period of ten years.
-                                </li>
-                                <li>Product registration through Goodman entitles the owner of the unit to additional
-                                    rights and remedies where applicable.
+                                <li>
+                                    Every American Standard residential unit comes with a Base Limited Warranty, which covers parts
+                                    that break because of manufacturer defects.
+                                    The Base Limited Warranty can range from 1 year to 20 years depending on the product.
                                 </li>
                                 <li>
-                                    Select higher efficiency Goodman brand air conditioners and heat pumps offer Lifetime
-                                    Compressor Limited Warranty to the original, registered owner. If the original registered
-                                    owner should have a compressor failure, we will replace the unit with a comparable Goodman
-                                    brand air conditioner or heat pump.
+                                    If you register your product within 60 days of installation, either by phone or online,
+                                    then it becomes a Registered Limited Warranty at no additional cost.
                                 </li>
                                 <li>
-                                    <a href="https://www.goodmanmfg.com/product-registration">You can register your Goodman Product through this link.</a>
+                                    The Registered Limited Warranty can range from 5 years to lifetime depending on the product.
+                                    Registration can be completed online or by phone.
+                                </li>
+                                <li>
+                                    <a href="https://www.americanstandardair.com/owner-support/warranty-and-registration.html">You can register your American Standard Product through this link.</a>
                                 </li>
                             </ul>
                         </div>

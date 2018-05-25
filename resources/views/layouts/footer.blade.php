@@ -2,8 +2,6 @@
 <footer class="footer">
     <!--Footer Links-->
     <div class="container">
-        <br>
-        <br>
         <div class="row">
             <!--First column-->
             @if(Agent::isMobile())
@@ -12,7 +10,11 @@
             <div class="col-md-4 col-md-offset-1 pull-center">
             @endif
                 <div class="row"></div>
-                <div class="row"></div>
+                <ul>
+                    <li class="nav">
+                        <h5><a class="btn btn-primary" target="_blank" href="https://www.ftlfinance.com">Financing through FTL Finance</a></h5>
+                    </li>
+                </ul>
                 <div class="row"></div>
                 <h5><strong>Proudly serving the greater Jacksonville area.</strong></h5>
                 <!--Copyright-->
