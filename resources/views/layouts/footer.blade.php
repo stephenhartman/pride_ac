@@ -63,26 +63,18 @@
 <!--/.Footer-->
 @push('scripts')
     <script>
-        //for each element that is classed as 'pull-down', set its margin-top
-        //to the difference between its own height and the height of its parent
-        $('.pull-center').each(function() {
-            var $this = $(this);
-            $this.css('margin-top', ($this.parent().height() - $this.height()) / 2)
-        });
-
         function initMap() {
-            var uluru = {lat: 30.2864362, lng: -81.6162642};
+            var pos = {lat: 30.2864362, lng: -81.6162642};
             var map = new google.maps.Map(document.getElementById('map'), {
                 zoom: 11,
-                center: uluru
+                center: pos
             });
             var marker = new google.maps.Marker({
-                position: uluru,
+                position: pos,
                 map: map
             });
         }
     </script>
-    <script async defer
-            src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCetQJiOZKda2cE-sWZ3rlkFXtiiTz-BJA&callback=initMap">
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCetQJiOZKda2cE-sWZ3rlkFXtiiTz-BJA&callback=initMap">
     </script>
 @endpush
