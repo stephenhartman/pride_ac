@@ -40,3 +40,5 @@ Route::get('about', 'AboutController@index')->name('about');
 
 Route::get('contact', 'ContactController@create')->name('contact.create');
 Route::post('contact', 'ContactController@store')->name('contact.store');
+
+Route::post('products', 'ProductController@change_prices')->name('products.change_prices');

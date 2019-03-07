@@ -37,11 +37,11 @@
                             </div>
                             <!-- Nav tabs -->
                             <ul class="nav nav-tabs" role="tablist">
-                                <li role="presentation" class="active"><a href="#goodman" aria-controls="goodman" role="tab" data-toggle="tab">
+                                <li role="presentation" class="active text-center"><a href="#goodman" aria-controls="goodman" role="tab" data-toggle="tab">
                                         <img src="{{ url('/image/goodman.png') }}" class="image-heading"></a>
                                 </li>
-                                <li role="presentation"><a href="#american" aria-controls="american" role="tab" data-toggle="tab">
-                                        <img src="{{ url('/image/american_standard.gif') }}" class="image-heading"></a>
+                                <li role="presentation" class="text-center"><a href="#trane" aria-controls="trane" role="tab" data-toggle="tab">
+                                        <img src="{{ url('/image/trane.png') }}" class="image-heading"></a>
                                 </li>
                             </ul>
                             <!-- Tab panes -->
@@ -102,7 +102,7 @@
                                         </table>
                                     </div>
                                 </div>
-                                <div role="tabpanel" class="tab-pane fade" id="american">
+                                <div role="tabpanel" class="tab-pane fade" id="trane">
                                     <div class="table-responsive">
                                         <table class="table table-striped table-bordered">
                                             <thead>
@@ -120,7 +120,7 @@
                                             <tbody>
                                             <tr>
                                                 <th scope="row">14 SEER</th>
-                                                @foreach ($american_products_14 as $product)
+                                                @foreach ($trane_products_14 as $product)
                                                     <td>
                                                         @if (Auth::user())
                                                             <a href="{{ URL::to('products/' . $product->id . '/edit') }}">${{ $product->price }}</a>
@@ -132,7 +132,7 @@
                                             </tr>
                                             <tr>
                                                 <th scope="row">15 SEER</th>
-                                                @foreach ($american_products_15 as $product)
+                                                @foreach ($trane_products_15 as $product)
                                                     <td>
                                                         @if (Auth::user())
                                                             <a href="{{ URL::to('products/' . $product->id . '/edit') }}">${{ $product->price }}</a>
@@ -144,7 +144,7 @@
                                             </tr>
                                             <tr>
                                                 <th scope="row">16 SEER</th>
-                                                @foreach ($american_products_16 as $product)
+                                                @foreach ($trane_products_16 as $product)
                                                     <td>
                                                         @if (Auth::user())
                                                             <a href="{{ URL::to('products/' . $product->id . '/edit') }}">${{ $product->price }}</a>

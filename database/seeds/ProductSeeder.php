@@ -18,7 +18,7 @@ class ProductSeeder extends Seeder
         $goodman = Brand::where('name', "Goodman")->first();
         $american = Brand::where('name', "American Standard")->first();
         // TODO Add more brands' products
-        //$trane = Brand::where('name', "Trane")->first();
+        $trane = Brand::where('name', "Trane")->first();
         //$carrier = Brand::where('name', "Carrier")->first();
         //$daikin = Brand::where('name', "Daikin")->first();
 
@@ -202,6 +202,175 @@ class ProductSeeder extends Seeder
         $goodman_16_50->unit_size_id = $unit_size_50->id;
         $goodman_16_50->brand_id = $goodman->id;
         $goodman_16_50->save();
+
+        // Trane
+        $trane_14_15 = new Product();
+        $trane_14_15->model = 'Trane 1.5 Ton 14 SEER';
+        $trane_14_15->price = 3787.36;
+        $trane_14_15->seer_rating_id = $seer_rating_14->id;
+        $trane_14_15->unit_size_id = $unit_size_15->id;
+        $trane_14_15->brand_id = $trane->id;
+        $trane_14_15->save();
+
+        $trane_15_15 = new Product();
+        $trane_15_15->model = 'Trane 1.5 Ton 15 SEER';
+        $trane_15_15->price = 4092.56;
+        $trane_15_15->seer_rating_id = $seer_rating_15->id;
+        $trane_15_15->unit_size_id = $unit_size_15->id;
+        $trane_15_15->brand_id = $trane->id;
+        $trane_15_15->save();
+
+        $trane_16_15 = new Product();
+        $trane_16_15->model = 'Trane 1.5 Ton 16 SEER';
+        $trane_16_15->price = 4236.48;
+        $trane_16_15->seer_rating_id = $seer_rating_16->id;
+        $trane_16_15->unit_size_id = $unit_size_15->id;
+        $trane_16_15->brand_id = $trane->id;
+        $trane_16_15->save();
+
+        $trane_14_20 = new Product();
+        $trane_14_20->model = 'Trane 2.0 Ton 14 SEER';
+        $trane_14_20->price = 3892.45;
+        $trane_14_20->seer_rating_id = $seer_rating_14->id;
+        $trane_14_20->unit_size_id = $unit_size_20->id;
+        $trane_14_20->brand_id = $trane->id;
+        $trane_14_20->save();
+
+        $trane_15_20 = new Product();
+        $trane_15_20->model = 'Trane 2.0 Ton 15 SEER';
+        $trane_15_20->price = 4178.34;
+        $trane_15_20->seer_rating_id = $seer_rating_15->id;
+        $trane_15_20->unit_size_id = $unit_size_20->id;
+        $trane_15_20->brand_id = $trane->id;
+        $trane_15_20->save();
+
+        $trane_16_20 = new Product();
+        $trane_16_20->model = 'Trane 2.0 Ton 16 SEER';
+        $trane_16_20->price = 4473.33;
+        $trane_16_20->seer_rating_id = $seer_rating_16->id;
+        $trane_16_20->unit_size_id = $unit_size_20->id;
+        $trane_16_20->brand_id = $trane->id;
+        $trane_16_20->save();
+
+        $trane_14_25 = new Product();
+        $trane_14_25->model = 'Trane 2.5 Ton 14 SEER';
+        $trane_14_25->price = 3998.93;
+        $trane_14_25->seer_rating_id = $seer_rating_14->id;
+        $trane_14_25->unit_size_id = $unit_size_25->id;
+        $trane_14_25->brand_id = $trane->id;
+        $trane_14_25->save();
+
+        $trane_15_25 = new Product();
+        $trane_15_25->model = 'Trane 2.5 Ton 15 SEER';
+        $trane_15_25->price = 4284.14;
+        $trane_15_25->seer_rating_id = $seer_rating_15->id;
+        $trane_15_25->unit_size_id = $unit_size_25->id;
+        $trane_15_25->brand_id = $trane->id;
+        $trane_15_25->save();
+
+        $trane_16_25 = new Product();
+        $trane_16_25->model = 'Trane 2.5 Ton 16 SEER';
+        $trane_16_25->price = 4576.52;
+        $trane_16_25->seer_rating_id = $seer_rating_16->id;
+        $trane_16_25->unit_size_id = $unit_size_25->id;
+        $trane_16_25->brand_id = $trane->id;
+        $trane_16_25->save();
+
+        $trane_14_30 = new Product();
+        $trane_14_30->model = 'Trane 3.0 Ton 14 SEER';
+        $trane_14_30->price = 4162.23;
+        $trane_14_30->seer_rating_id = $seer_rating_14->id;
+        $trane_14_30->unit_size_id = $unit_size_30->id;
+        $trane_14_30->brand_id = $trane->id;
+        $trane_14_30->save();
+
+        $trane_15_30 = new Product();
+        $trane_15_30->model = 'Trane 3.0 Ton 15 SEER';
+        $trane_15_30->price = 4487.91;
+        $trane_15_30->seer_rating_id = $seer_rating_15->id;
+        $trane_15_30->unit_size_id = $unit_size_30->id;
+        $trane_15_30->brand_id = $trane->id;
+        $trane_15_30->save();
+
+        $trane_16_30 = new Product();
+        $trane_16_30->model = 'Trane 3.0 Ton 16 SEER';
+        $trane_16_30->price = 4721.37;
+        $trane_16_30->seer_rating_id = $seer_rating_16->id;
+        $trane_16_30->unit_size_id = $unit_size_30->id;
+        $trane_16_30->brand_id = $trane->id;
+        $trane_16_30->save();
+
+        $trane_14_35 = new Product();
+        $trane_14_35->model = 'Trane 3.5 Ton 14 SEER';
+        $trane_14_35->price = 4382.52;
+        $trane_14_35->seer_rating_id = $seer_rating_14->id;
+        $trane_14_35->unit_size_id = $unit_size_35->id;
+        $trane_14_35->brand_id = $trane->id;
+        $trane_14_35->save();
+
+        $trane_15_35 = new Product();
+        $trane_15_35->model = 'Trane 3.5 Ton 15 SEER';
+        $trane_15_35->price = 4710.24;
+        $trane_15_35->seer_rating_id = $seer_rating_15->id;
+        $trane_15_35->unit_size_id = $unit_size_35->id;
+        $trane_15_35->brand_id = $trane->id;
+        $trane_15_35->save();
+
+        $trane_16_35 = new Product();
+        $trane_16_35->model = 'Trane 3.5 Ton 16 SEER';
+        $trane_16_35->price = 5008.88;
+        $trane_16_35->seer_rating_id = $seer_rating_16->id;
+        $trane_16_35->unit_size_id = $unit_size_35->id;
+        $trane_16_35->brand_id = $trane->id;
+        $trane_16_35->save();
+
+        $trane_14_40 = new Product();
+        $trane_14_40->model = 'Trane 4.0 Ton 14 SEER';
+        $trane_14_40->price = 4772.85;
+        $trane_14_40->seer_rating_id = $seer_rating_14->id;
+        $trane_14_40->unit_size_id = $unit_size_40->id;
+        $trane_14_40->brand_id = $trane->id;
+        $trane_14_40->save();
+
+        $trane_15_40 = new Product();
+        $trane_15_40->model = 'Trane 4.0 Ton 15 SEER';
+        $trane_15_40->price = 5028.24;
+        $trane_15_40->seer_rating_id = $seer_rating_15->id;
+        $trane_15_40->unit_size_id = $unit_size_40->id;
+        $trane_15_40->brand_id = $trane->id;
+        $trane_15_40->save();
+
+        $trane_16_40 = new Product();
+        $trane_16_40->model = 'Trane 4.0 Ton 16 SEER';
+        $trane_16_40->price = 5391.21;
+        $trane_16_40->seer_rating_id = $seer_rating_16->id;
+        $trane_16_40->unit_size_id = $unit_size_40->id;
+        $trane_16_40->brand_id = $trane->id;
+        $trane_16_40->save();
+
+        $trane_14_50 = new Product();
+        $trane_14_50->model = 'Trane 5.0 Ton 14 SEER';
+        $trane_14_50->price = 5035.67;
+        $trane_14_50->seer_rating_id = $seer_rating_14->id;
+        $trane_14_50->unit_size_id = $unit_size_50->id;
+        $trane_14_50->brand_id = $trane->id;
+        $trane_14_50->save();
+
+        $trane_15_50 = new Product();
+        $trane_15_50->model = 'Trane 5.0 Ton 15 SEER';
+        $trane_15_50->price = 6034.49;
+        $trane_15_50->seer_rating_id = $seer_rating_15->id;
+        $trane_15_50->unit_size_id = $unit_size_50->id;
+        $trane_15_50->brand_id = $trane->id;
+        $trane_15_50->save();
+
+        $trane_16_50 = new Product();
+        $trane_16_50->model = 'Trane 5.0 Ton 16 SEER';
+        $trane_16_50->price = 6512.32;
+        $trane_16_50->seer_rating_id = $seer_rating_16->id;
+        $trane_16_50->unit_size_id = $unit_size_50->id;
+        $trane_16_50->brand_id = $trane->id;
+        $trane_16_50->save();
 
         // American Standard
         $american_14_15 = new Product();

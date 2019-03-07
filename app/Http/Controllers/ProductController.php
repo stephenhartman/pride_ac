@@ -186,4 +186,21 @@ class ProductController extends Controller
 
         return view('products.american.index', compact('products_14','products_15', 'products_16'));
     }
+
+    /**
+     * Batch process to change all prices
+     *
+     * @return mixed
+     */
+    public function change_prices(decimal $change)
+    {
+        $products = Product::all()->get();
+        foreach ($product as $products)
+        {
+            $product->price = $product->price * $change;
+            $product->save();
+        }
+        Session::flash('alert', 'All prices changed by a factor of ' . $change . ' percent.');
+        return view('products.index');
+    }
 }

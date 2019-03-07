@@ -27,8 +27,8 @@
                                     <img src="{{ url('/image/goodman.png') }}" class="product-image"></a>
                             </div>
                             <div class="col-md-6 text-center">
-                                <a href="{{ route('american') }}">
-                                    <img src="{{ url('/image/american_standard.jpg') }}" class="product-image"></a>
+                                <a href="{{ route('trane') }}">
+                                    <img src="{{ url('/image/trane.png') }}" class="product-image"></a>
                             </div>
                         </div>
                         <div class="row">
