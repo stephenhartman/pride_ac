@@ -4,7 +4,7 @@
         <tr>
             <th></th>
             <th>1.5 Ton</th>
-            <th>2 Ton</th>
+            <th>2.0 Ton</th>
             <th>2.5 Ton</th>
             <th>3.0 Ton</th>
             <th>3.5 Ton</th>
