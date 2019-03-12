@@ -37,11 +37,11 @@
                             </div>
                             <!-- Nav tabs -->
                             <ul class="nav nav-tabs" role="tablist">
-                                <li role="presentation" class="active text-center"><a href="#goodman" aria-controls="goodman" role="tab" data-toggle="tab">
+                                <li role="presentation"><a href="#goodman" aria-controls="goodman" role="tab" data-toggle="tab">
                                         <img src="{{ url('/image/goodman.png') }}" class="image-heading"></a>
                                 </li>
-                                <li role="presentation" class="text-center"><a href="#trane" aria-controls="trane" role="tab" data-toggle="tab">
-                                        <img src="{{ url('/image/trane.png') }}" class="image-heading"></a>
+                                <li role="presentation"><!--a href="#trane" aria-controls="trane" role="tab" data-toggle="tab">
+                                        <img src="{{ url('/image/trane.png') }}" class="image-heading"></a-->
                                 </li>
                             </ul>
                             <!-- Tab panes -->
