@@ -28,7 +28,6 @@ mix.webpackConfig({
             '/contact': ['resources/views/contact/create.blade.php'],
             '/contact/index': ['resources/views/contact/index.blade.php'],
             '/login': ['resources/views/auth/login.blade.php'],
-            '/register':['resources/views/auth/register.blade.php'],
             '/products':['resources/views/products/index.blade.php'],
             '/american':['resources/views/products/american/index.blade.php'],
             '/trane':['resources/views/products/trane/index.blade.php'],
