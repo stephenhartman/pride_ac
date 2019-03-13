@@ -19,7 +19,7 @@
                 <h5><strong>Proudly serving the greater Jacksonville area.</strong></h5>
                 <!--Copyright-->
                 <div class="container-fluid">
-                    © 2018 Copyright <a href="{{ url('/') }}" style="text-decoration:none"><span itemprop="name">Pride AC and Heating</span></a>
+                    © 2018-2019 Copyright <a href="{{ url('/') }}" style="text-decoration:none"><span itemprop="name">Pride AC and Heating</span></a>
                     <br>
                     <br>
                 </div>

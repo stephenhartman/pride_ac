@@ -9,7 +9,23 @@
         "src": "image/logo64px.png",
         "type": "image/png",
         "sizes": "64x64"
+      },
+      {
+        "src": "image/logo144px.png",
+        "type": "image/png",
+        "sizes": "144x144"
+      },
+      {
+        "src": "image/logo268px.png",
+        "type": "image/png",
+        "sizes": "268x268"
+      },
+      {
+        "src": "image/logo512px.png",
+        "type": "image/png",
+        "sizes": "512x512"
       }
+
     ],
     "start_url": "https://www.prideacjax.com/",
     "orientation": "portrait"
