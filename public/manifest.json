@@ -1,0 +1,17 @@
+{
+    "short_name": "Pride AC Jax",
+    "name": "Pride AC Jacksonville",
+    "theme_color": "#0a75d2",
+    "background_color": "#ffffff",
+    "display": "standalone",
+    "icons": [
+      {
+        "src": "image/logo64px.png",
+        "type": "image/png",
+        "sizes": "64x64"
+      }
+    ],
+    "start_url": "https://www.prideacjax.com/",
+    "orientation": "portrait"
+  }
+  
