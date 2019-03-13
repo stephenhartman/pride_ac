@@ -16,6 +16,7 @@
 
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
+    <link rel="manifest" href="/manifest.json">
 </head>
 <body>
 <div itemscope itemtype="http://schema.org/LocalBusiness">
