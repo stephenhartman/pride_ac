@@ -24,9 +24,11 @@
                     <br>
                 </div>
                 <ul>
+                @if (!Auth::check())
                     <li class="nav">
                         <a class="btn btn-default" href="{{ route('login') }}">Employee Login</a>
                     </li>
+                @endif
                 </ul>
                 <!--/.Copyright-->
             </div>

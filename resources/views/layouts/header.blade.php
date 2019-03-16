@@ -43,13 +43,13 @@
                 <li><a href="tel:+19045750794">Call Us: (904)575-0794</a></li>
                 <li><a href="tel:+19049453330">Para Español: (904)945-3330</a></li>
                 <!-- Authentication Links -->
-                @if (Auth::guest())
-                @else
+                @if (Auth::check())
                     <li class="dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
                             {{ Auth::user()->name }} <span class="caret"></span>
                         </a>
                         <ul class="dropdown-menu" role="menu">
+                            <li><a href="{{ route('photos.index') }}">Photos</a></li>
                             <li><a href="{{ route('contact.index') }}">Contacts</a></li>
                             <li>
                                 <a href="{{ route('logout') }}"

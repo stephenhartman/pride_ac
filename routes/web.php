@@ -29,16 +29,12 @@ Route::middleware(['admin'])->group(function () {
 });
 
 Route::get('/', 'HomeController@index')->name('home');
-
+Route::get('about', 'AboutController@index')->name('about');
+Route::get('contact', 'ContactController@create')->name('contact.create');
+Route::post('contact', 'ContactController@store')->name('contact.store');
+Route::resource('photos', 'PhotoController');
 Route::resource('products', 'ProductController', ['only' => 'index']);
-
 Route::get('goodman', 'ProductController@goodman')->name('goodman');
 Route::get('trane', 'ProductController@trane')->name('trane');
 Route::get('american', 'ProductController@american')->name('american');
-
-Route::get('about', 'AboutController@index')->name('about');
-
-Route::get('contact', 'ContactController@create')->name('contact.create');
-Route::post('contact', 'ContactController@store')->name('contact.store');
-
 Route::post('products', 'ProductController@change_prices')->name('products.change_prices');

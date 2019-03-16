@@ -115,3 +115,11 @@
 .nav-tabs, .nav-pills {
   text-align:center;
 }
+
+.carousel-caption {
+  background: linear-gradient(to bottom, rgb(34, 34, 34), rgba(100, 100, 100, 0.5));
+}
+
+.carousel-inner > .item > img {
+  margin: 0 auto;
+}

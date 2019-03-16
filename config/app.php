@@ -202,6 +202,11 @@ return [
          * NoCaptcha
          */
         Anhskohbo\NoCaptcha\NoCaptchaServiceProvider::class,
+
+        /*
+         * Photo upload dependencies
+         */
+        Intervention\Image\ImageServiceProvider::class,
     ],
 
     /*
