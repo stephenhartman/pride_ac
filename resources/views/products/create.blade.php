@@ -6,10 +6,10 @@
 
     <div class="container">
         <div class="row">
-            <div class="col-md-8 col-md-offset-2">
-                <div class="panel panel-default">
-                    <div class="panel-heading">Create Product</div>
-                    <div class="panel-body">
+            <div class="col-md-8 offset-md-2">
+                <div class="card">
+                    <div class="card-header">Create Product</div>
+                    <div class="card-body">
                         {!! Form::open(['route' => 'products.store']) !!}
                         <div class="row">
                             <div class="col-md-12">
