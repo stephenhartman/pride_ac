@@ -5,9 +5,9 @@
 @section('content')
     <div class="container">
         <div class="row">
-            <div class="col-md-8 col-md-offset-2">
-                <div class="panel panel-default">
-                    <div class="panel-heading">
+            <div class="col-md-8 offset-md-2">
+                <div class="card">
+                    <div class="card-header">
                         <div class="row">
                             <div class="col-md-6">
                                 <h4>Offered Brands</h4>
@@ -20,7 +20,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="panel-body">
+                    <div class="card-body">
                         <div class="row">
                             <div class="col-md-3 text-center"></div>
                             <div class="col-md-6 text-center">
@@ -35,8 +35,8 @@
                             </div>
                         </div>
                         <div class="row">
-                            <div class="text-center">
-                                <h3>More coming soon!</h3>
+                            <div class="col-md-12">
+                                <h3 class="text-center">More coming soon!</h3>
                             </div>
                         </div>
                     </div>

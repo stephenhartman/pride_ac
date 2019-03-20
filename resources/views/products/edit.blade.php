@@ -6,9 +6,9 @@
 
     <div class="container">
         <div class="row">
-            <div class="col-md-8 col-md-offset-2">
-                <div class="panel panel-default">
-                    <div class="panel-heading clearfix">
+            <div class="col-md-8 offset-md-2">
+                <div class="card">
+                    <div class="card-header clearfix">
                         <div class="row">
                             <div class="col-md-6">
                                 <div class="panel-title pull-left">
@@ -22,7 +22,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="panel-body">
+                    <div class="card-body">
                         {{ Form::model($product, ['route' => ['products.update', $product], 'method' => 'PUT']) }}
                         <div class="row">
                             <div class="col-md-12">

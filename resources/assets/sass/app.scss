@@ -1,38 +1,39 @@
 
 // Fonts
-@import url("https://fonts.googleapis.com/css?family=Raleway:300,400,600");
+@import url('https://fonts.googleapis.com/css?family=Nunito');
 
-/**
-    Original bootstrap
-  */
-// Variables
-//@import "variables";
 // Bootstrap
-//@import "~bootstrap-sass/assets/stylesheets/bootstrap";
+@import "node_modules/bootstrap/scss/bootstrap.scss";
 
 /**
     Bootswatch
  */
 // Variables
-@import "node_modules/bootswatch/cerulean/_variables";
+@import "node_modules/bootswatch/dist/cerulean/_variables";
 
-// Mixins
-@import "node_modules/bootstrap-sass/assets/stylesheets/bootstrap/mixins";
+/**
+    Original bootstrap
+  */
+// Variables
+@import "variables";
 
 // Bootswatch
-@import "node_modules/bootswatch/cerulean/_bootswatch";
+@import "node_modules/bootswatch/dist/cerulean/_bootswatch";
 
 // Bootstrap
-@import "node_modules/bootswatch/cerulean/bootstrap";
+@import "node_modules/bootswatch/dist/cerulean/bootstrap";
 
-//html, body {
-//  background-color: #fff;
-//  color: #636b6f;
-//  font-family: 'Raleway', sans-serif;
-//  font-weight: 100;
-//  height: 100vh;
-//  margin: 0;
-//}
+// Fontawesome
+@import '~@fortawesome/fontawesome-free/css/all.css';
+html, body {
+  background-color: #fff;
+  color: #636b6f;
+  font-family: 'Nunito', sans-serif;
+  font-weight: 100;
+  font-size: .875rem;
+  height: 100vh;
+  margin: 0;
+}
 //
 //.full-height {
 //  height: 100vh;
@@ -122,4 +123,8 @@
 
 .carousel-inner > .item > img {
   margin: 0 auto;
+}
+
+.pagination {
+  justify-content: center;
 }

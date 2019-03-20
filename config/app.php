@@ -191,7 +191,7 @@ return [
         /*
          * Sentry
          */
-        Sentry\SentryLaravel\SentryLaravelServiceProvider::class,
+        //Sentry\SentryLaravel\SentryLaravelServiceProvider::class,
 
         /*
          * Agent Package
