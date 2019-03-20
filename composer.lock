@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "7c4149c12808a10417e141990b8ee71c",
+    "content-hash": "7f2c34b60264430d042a400967f8bd28",
     "packages": [
         {
             "name": "anhskohbo/no-captcha",
@@ -4938,39 +4938,6 @@
             "time": "2016-01-20T08:20:44+00:00"
         },
         {
-            "name": "julien-c/iso3166",
-            "version": "2.0.1",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/julien-c/iso3166.git",
-                "reference": "d7bd56333a1ed901fbc41d5a5c92d88a2a6cb88c"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/julien-c/iso3166/zipball/d7bd56333a1ed901fbc41d5a5c92d88a2a6cb88c",
-                "reference": "d7bd56333a1ed901fbc41d5a5c92d88a2a6cb88c",
-                "shasum": ""
-            },
-            "type": "library",
-            "autoload": {
-                "psr-4": {
-                    "Iso3166\\": "src/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Julien Chaumond",
-                    "email": "chaumond@gmail.com"
-                }
-            ],
-            "description": "ISO 3166-1 alpha-2 mapping",
-            "time": "2015-12-15T15:40:03+00:00"
-        },
-        {
             "name": "maximebf/debugbar",
             "version": "v1.15.0",
             "source": {
@@ -6504,7 +6471,7 @@
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": {
-        "php": "^7.2"
+        "php": "^7.2.0"
     },
     "platform-dev": []
 }

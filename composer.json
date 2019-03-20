@@ -5,7 +5,7 @@
     "license": "MIT",
     "type": "project",
     "require": {
-        "php": "^7.2",
+        "php": "^7.2.0",
         "anhskohbo/no-captcha": "^3.0",
         "artesaos/seotools": "^0.14.0",
         "fideloper/proxy": "^4.0",
