@@ -41,7 +41,7 @@
                 <a href="#" class="dropdown-toggle nav-link" data-toggle="dropdown" role="button" aria-expanded="false">
                         {{ Auth::user()->name }} <span class="caret"></span>
                 </a>
-                <ul class="dropdown-menu" role="menu">
+                <ul class="dropdown-menu dropdown-menu-right" role="menu">
                     <li class="dropdown-item"><a href="{{ route('photos.index') }}">Photos</a></li>
                     <li class="dropdown-item"><a href="{{ route('contact.index') }}">Contacts</a></li>
                     <li class="dropdown-item"> <a href="{{ route('logout') }}" onclick="event.preventDefault(); document.getElementById('logout-form').submit();">Logout</a>
