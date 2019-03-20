@@ -189,11 +189,6 @@ return [
         Propaganistas\LaravelPhone\PhoneServiceProvider::class,
 
         /*
-         * Sentry
-         */
-        //Sentry\SentryLaravel\SentryLaravelServiceProvider::class,
-
-        /*
          * Agent Package
          */
         Jenssegers\Agent\AgentServiceProvider::class,
