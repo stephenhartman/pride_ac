@@ -17,7 +17,7 @@
             </li>
             <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    Services<span class="caret"></span>
+                    Services
                 </a>
                 <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
                     <a class="dropdown-item" href="#">Service and Repairs</a>
@@ -41,7 +41,7 @@
             @auth
             <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" href="#" id="navbarRightDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    {{ Auth::user()->name }}<span class="caret"></span>
+                    {{ Auth::user()->name }}
                 </a>
                 <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarRightDropdownMenuLink">
                     <a class="dropdown-item" href="{{ route('photos.index') }}">Photos</a>

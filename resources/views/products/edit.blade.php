@@ -15,9 +15,9 @@
                                     Edit {{ $product->brand->name }} Product
                                 </div>
                             </div>
-                            <div class="col-md-6">
+                            <div class="col-md-6 text-right">
                                 {{ Form::open(['method' => 'DELETE', 'route' => ['products.destroy', $product->id], ]) }}
-                                {{ Form::button('<i class="glyphicon glyphicon-trash"></i> Delete', array('type' => 'submit', 'data-id' => $product->id, 'class' => 'btn btn-danger pull-right', 'onclick' => "return confirm('Are you sure?')")) }}
+                                {{ Form::button('<i class="fas fa-trash"></i> Delete', array('type' => 'submit', 'data-id' => $product->id, 'class' => 'btn btn-danger pull-right', 'onclick' => "return confirm('Are you sure?')")) }}
                                 {{ Form::close() }}
                             </div>
                         </div>
