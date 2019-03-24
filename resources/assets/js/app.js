@@ -20,5 +20,5 @@ require('./bootstrap');
 // const app = new Vue({
 //     el: '#app'
 // });
-
+window.swal = require('sweetalert');
 
